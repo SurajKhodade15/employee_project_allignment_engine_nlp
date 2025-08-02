@@ -486,6 +486,425 @@ def project_employee_search():
             else:
                 st.warning("No project recommendations found for this employee.")
 
+def hr_employee_project_matcher():
+    """HR functionality to input employee details and get project recommendations"""
+    st.header("👔 HR Employee-Project Matcher")
+    st.markdown("""
+    <div class="info-box">
+        <strong>HR Project Matching Tool</strong><br>
+        Enter employee details below to find the most suitable projects based on their profile.
+    </div>
+    """, unsafe_allow_html=True)
+    
+    # Create input form
+    with st.form("employee_details_form"):
+        st.subheader("📝 Employee Information")
+        
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            department = st.selectbox(
+                "🏢 Department",
+                ["Data Science", "AI Research", "Software Engineering", "Web Development", 
+                 "Mobile Development", "DevOps", "Quality Assurance", "Product Management",
+                 "Business Analysis", "Consulting", "Finance", "Marketing", "Other"],
+                help="Select the employee's department"
+            )
+            
+            years_experience = st.number_input(
+                "📅 Years of Experience",
+                min_value=0.0,
+                max_value=50.0,
+                value=3.0,
+                step=0.5,
+                help="Enter the total years of professional experience"
+            )
+        
+        with col2:
+            location = st.selectbox(
+                "🌍 Location",
+                ["Mumbai", "Bangalore", "Delhi", "Hyderabad", "Chennai", "Pune", 
+                 "Kolkata", "Ahmedabad", "Remote", "Other"],
+                help="Select the employee's preferred work location"
+            )
+            
+            availability = st.selectbox(
+                "⏰ Availability",
+                ["Immediately Available", "Available in 1 week", "Available in 2 weeks", 
+                 "Available in 1 month", "Available in 2 months"],
+                help="When can the employee start a new project?"
+            )
+        
+        st.subheader("💼 Experience & Skills")
+        experience_text = st.text_area(
+            "📝 Experience Description",
+            placeholder="Describe the employee's skills, technologies, projects, and experience...\n\nExample:\n- Python programming for data analysis\n- Machine learning model development\n- SQL database management\n- Experience with TensorFlow and scikit-learn\n- Led 3 data science projects for healthcare clients",
+            height=150,
+            help="Provide detailed information about skills, technologies, and project experience"
+        )
+        
+        # Additional preferences
+        st.subheader("🎯 Project Preferences")
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            project_type_preference = st.multiselect(
+                "🎯 Preferred Project Types",
+                ["Data Science", "Machine Learning", "Web Development", "Mobile Apps", 
+                 "AI/ML Research", "Analytics", "Consulting", "Product Development"],
+                help="Select preferred types of projects"
+            )
+        
+        with col2:
+            client_type_preference = st.selectbox(
+                "🏢 Client Type Preference",
+                ["No Preference", "Startup", "Enterprise", "Government", "Healthcare", 
+                 "Finance", "Technology", "Education"],
+                help="Preferred client industry or type"
+            )
+        
+        # Submit button
+        submitted = st.form_submit_button("🚀 Find Matching Projects", type="primary")
+    
+    # Process the form when submitted
+    if submitted:
+        if not experience_text.strip():
+            st.error("❌ Please provide experience description to get accurate recommendations.")
+            return
+        
+        with st.spinner("🔍 Finding suitable projects..."):
+            # Create temporary employee profile
+            temp_employee = {
+                'Employee_ID': 'TEMP_HR_001',
+                'Department': department,
+                'Location': location,
+                'Years_Experience': years_experience,
+                'Skills': experience_text,
+                'Experience_Text': experience_text,
+                'Availability': availability,
+                'Project_Type_Preference': ', '.join(project_type_preference) if project_type_preference else '',
+                'Client_Type_Preference': client_type_preference
+            }
+            
+            # Find matching projects
+            recommendations = find_projects_for_employee_profile(temp_employee)
+            
+            if recommendations is not None and len(recommendations) > 0:
+                st.success(f"✅ Found {len(recommendations)} suitable projects!")
+                
+                # Display recommendations
+                st.subheader("🎯 Recommended Projects")
+                
+                for idx, project in recommendations.iterrows():
+                    with st.expander(f"🚀 {project['Project_Name']} - Score: {project['similarity_score']:.3f}", expanded=idx<3):
+                        col1, col2 = st.columns([2, 1])
+                        
+                        with col1:
+                            st.markdown(f"""
+                            **🏢 Client:** {project['Client_Name']}<br>
+                            **🌍 Location:** {project['Location']}<br>
+                            **📋 Status:** {project['Status']}<br>
+                            **💼 Required Skills:** {project['Required_Skills']}<br>
+                            **🎯 Match Score:** {project['similarity_score']:.3f}/1.000
+                            """, unsafe_allow_html=True)
+                        
+                        with col2:
+                            # Match strength indicator
+                            if project['similarity_score'] >= 0.7:
+                                strength = "🟢 Excellent Match"
+                                color = "green"
+                            elif project['similarity_score'] >= 0.5:
+                                strength = "🟡 Good Match"
+                                color = "orange"
+                            else:
+                                strength = "🟠 Moderate Match"
+                                color = "red"
+                            
+                            st.markdown(f"""
+                            <div style="text-align: center; padding: 1rem; background-color: {color}20; border-radius: 5px;">
+                                <strong>{strength}</strong>
+                            </div>
+                            """, unsafe_allow_html=True)
+                        
+                        # Why this project matches
+                        st.markdown("**🔍 Why this project matches:**")
+                        match_reasons = generate_match_reasons(temp_employee, project)
+                        for reason in match_reasons:
+                            st.markdown(f"• {reason}")
+                
+                # Export options
+                st.subheader("📥 Export Options")
+                col1, col2, col3 = st.columns(3)
+                
+                with col1:
+                    csv_data = recommendations.to_csv(index=False)
+                    st.download_button(
+                        "📄 Download CSV",
+                        csv_data,
+                        f"hr_project_recommendations_{temp_employee['Employee_ID']}.csv",
+                        "text/csv"
+                    )
+                
+                with col2:
+                    # Create summary report
+                    report = create_hr_matching_report(temp_employee, recommendations)
+                    st.download_button(
+                        "📋 Download Report",
+                        report,
+                        f"hr_matching_report_{temp_employee['Employee_ID']}.txt",
+                        "text/plain"
+                    )
+            else:
+                st.warning("⚠️ No suitable projects found. Try adjusting the experience description or preferences.")
+
+def find_projects_for_employee_profile(employee_profile):
+    """Find suitable projects for a given employee profile using the matching engine"""
+    try:
+        # Load project data
+        config = st.session_state.config
+        
+        # Try processed data first, then raw data
+        try:
+            df_projects = pd.read_csv(config.PROCESSED_DATA_DIR / "client_projects_cleaned.csv")
+        except FileNotFoundError:
+            # Load and process raw data
+            df_projects_raw = pd.read_csv(config.RAW_DATA_DIR / "client_projects.csv")
+            preprocessor = DataPreprocessor(config)
+            df_projects = preprocessor.clean_projects(df_projects_raw)
+        
+        # Convert employee profile to dataframe format
+        employee_df = pd.DataFrame([employee_profile])
+        
+        # Initialize preprocessor and feature extractor
+        preprocessor = DataPreprocessor(config)
+        feature_extractor = FeatureExtractor(config)
+        
+        # Clean the employee data using the employee experience cleaning method
+        # Since HR provides complete info in one record, we'll use this method
+        employee_df = preprocessor.clean_employee_experience(employee_df)
+        
+        # Try to load existing project features or extract them
+        try:
+            # Load existing features if available
+            with open(config.MODEL_DIR / "project_tfidf_matrix.pkl", 'rb') as f:
+                project_tfidf = pickle.load(f)
+            with open(config.MODEL_DIR / "project_binary_matrix.pkl", 'rb') as f:
+                project_binary = pickle.load(f)
+            with open(config.MODEL_DIR / "tfidf_vectorizer.pkl", 'rb') as f:
+                tfidf_vectorizer = pickle.load(f)
+            with open(config.MODEL_DIR / "skills_vocabulary.pkl", 'rb') as f:
+                skills_vocabulary = pickle.load(f)
+                
+            # Extract features for the single employee using existing models
+            emp_binary = feature_extractor._create_binary_matrix(
+                employee_df, 'Skills', skills_vocabulary, 'Employee_ID'
+            )
+            
+            # For TF-IDF, we need to transform using the existing vectorizer
+            # and ensure the result matches the project feature dimensions
+            emp_skills_text = employee_df['Skills'].fillna('').tolist()
+            emp_tfidf_matrix = tfidf_vectorizer.transform(emp_skills_text)
+            
+            # Debug: Check if TF-IDF dimensions match what we expect
+            expected_tfidf_cols = project_tfidf.shape[1]
+            actual_tfidf_cols = emp_tfidf_matrix.shape[1]
+            
+            if actual_tfidf_cols != expected_tfidf_cols:
+                st.warning(f"TF-IDF dimension mismatch: vectorizer produces {actual_tfidf_cols} features, but project has {expected_tfidf_cols}")
+                # Create properly sized TF-IDF matrix
+                if actual_tfidf_cols < expected_tfidf_cols:
+                    # Pad with zeros if vectorizer produces fewer features
+                    padded_matrix = np.zeros((1, expected_tfidf_cols))
+                    padded_matrix[:, :actual_tfidf_cols] = emp_tfidf_matrix.toarray()
+                    emp_tfidf = pd.DataFrame(
+                        padded_matrix,
+                        index=employee_df['Employee_ID'],
+                        columns=project_tfidf.columns
+                    )
+                else:
+                    # Truncate if vectorizer produces more features
+                    truncated_matrix = emp_tfidf_matrix.toarray()[:, :expected_tfidf_cols]
+                    emp_tfidf = pd.DataFrame(
+                        truncated_matrix,
+                        index=employee_df['Employee_ID'],
+                        columns=project_tfidf.columns
+                    )
+            else:
+                # Perfect match - use as is
+                emp_tfidf = pd.DataFrame(
+                    emp_tfidf_matrix.toarray(), 
+                    index=employee_df['Employee_ID'],
+                    columns=project_tfidf.columns
+                )
+            
+            # For binary features, align with project features
+            if emp_binary.shape[1] != project_binary.shape[1]:
+                # Create aligned binary matrix
+                aligned_binary = pd.DataFrame(
+                    0, 
+                    index=emp_binary.index, 
+                    columns=project_binary.columns
+                )
+                # Fill in the matching columns
+                for col in emp_binary.columns:
+                    if col in aligned_binary.columns:
+                        aligned_binary[col] = emp_binary[col]
+                emp_binary = aligned_binary
+                
+        except FileNotFoundError:
+            # If no existing features, extract features for both employee and projects
+            st.warning("Pre-trained models not found. Extracting features from scratch...")
+            features = feature_extractor.extract_all_features(employee_df, df_projects)
+            emp_binary = features['employee_binary']
+            emp_tfidf = features['employee_tfidf']
+            project_binary = features['project_binary']
+            project_tfidf = features['project_tfidf']
+        
+        # Initialize matcher
+        matcher = EmployeeProjectMatcher(employee_df, config)
+        
+        # Verify feature dimensions match before computing similarities
+        if emp_binary.shape[1] != project_binary.shape[1]:
+            st.error(f"Binary feature dimension mismatch: {emp_binary.shape[1]} vs {project_binary.shape[1]}")
+            return None
+            
+        if emp_tfidf.shape[1] != project_tfidf.shape[1]:
+            st.error(f"TF-IDF feature dimension mismatch: {emp_tfidf.shape[1]} vs {project_tfidf.shape[1]}")
+            return None
+        
+        # Compute similarities
+        binary_similarity = matcher.compute_similarity_matrix(
+            emp_binary, project_binary, 'cosine'
+        )
+        
+        tfidf_similarity = matcher.compute_similarity_matrix(
+            emp_tfidf, project_tfidf, 'cosine'
+        )
+        
+        # Combine similarities (70% TF-IDF, 30% binary for better semantic matching)
+        hybrid_similarity = matcher.compute_hybrid_similarity(
+            binary_similarity, tfidf_similarity, 0.3, 0.7
+        )
+        
+        # Get top project recommendations
+        similarities = hybrid_similarity[0]  # Get similarities for our single employee
+        
+        # Create recommendations dataframe
+        recommendations = []
+        for proj_idx, similarity in enumerate(similarities):
+            if similarity > 0.05:  # Minimum threshold
+                project_info = df_projects.iloc[proj_idx].copy()
+                project_info['similarity_score'] = similarity
+                recommendations.append(project_info)
+        
+        if recommendations:
+            recommendations_df = pd.DataFrame(recommendations)
+            recommendations_df = recommendations_df.sort_values('similarity_score', ascending=False)
+            return recommendations_df.head(10)  # Top 10 recommendations
+        else:
+            return pd.DataFrame()
+            
+    except Exception as e:
+        st.error(f"Error finding projects: {str(e)}")
+        import traceback
+        st.error(f"Details: {traceback.format_exc()}")
+        return None
+
+def generate_match_reasons(employee, project):
+    """Generate reasons why an employee matches a project"""
+    reasons = []
+    
+    # Check skill overlap
+    emp_skills = employee['Skills'].lower().split()
+    proj_skills = project['Required_Skills'].lower().split()
+    
+    common_skills = set(emp_skills) & set(proj_skills)
+    if common_skills:
+        reasons.append(f"Skills match: {', '.join(list(common_skills)[:3])}")
+    
+    # Check experience level
+    if employee['Years_Experience'] >= 5:
+        reasons.append("Senior experience level suitable for project complexity")
+    elif employee['Years_Experience'] >= 2:
+        reasons.append("Mid-level experience appropriate for project requirements")
+    
+    # Check location
+    if employee['Location'] == project['Location']:
+        reasons.append("Same location - no relocation required")
+    elif employee['Location'] == "Remote":
+        reasons.append("Remote work preference - flexible location")
+    
+    # Check department alignment
+    dept_project_mapping = {
+        'Data Science': ['analytics', 'data', 'science', 'ml', 'ai'],
+        'AI Research': ['ai', 'machine learning', 'deep learning', 'nlp'],
+        'Software Engineering': ['software', 'development', 'programming'],
+        'Web Development': ['web', 'frontend', 'backend', 'javascript']
+    }
+    
+    dept_keywords = dept_project_mapping.get(employee['Department'], [])
+    proj_text = project['Required_Skills'].lower()
+    
+    if any(keyword in proj_text for keyword in dept_keywords):
+        reasons.append(f"Department expertise aligns with project needs")
+    
+    if not reasons:
+        reasons.append("General skill alignment based on experience description")
+    
+    return reasons
+
+def create_hr_matching_report(employee, recommendations):
+    """Create a detailed HR matching report"""
+    report = f"""
+EMPLOYEE PROJECT MATCHING REPORT
+Generated on: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')}
+
+EMPLOYEE PROFILE:
+================
+Employee ID: {employee['Employee_ID']}
+Department: {employee['Department']}
+Location: {employee['Location']}
+Years of Experience: {employee['Years_Experience']}
+Availability: {employee['Availability']}
+
+EXPERIENCE SUMMARY:
+==================
+{employee['Experience_Text'][:500]}...
+
+PROJECT RECOMMENDATIONS:
+========================
+Total Projects Found: {len(recommendations)}
+
+TOP 5 RECOMMENDATIONS:
+"""
+    
+    for idx, project in recommendations.head(5).iterrows():
+        report += f"""
+{idx+1}. {project['Project_Name']}
+   Client: {project['Client_Name']}
+   Location: {project['Location']}
+   Match Score: {project['similarity_score']:.3f}
+   Required Skills: {project['Required_Skills']}
+   Status: {project['Status']}
+   
+"""
+    
+    report += """
+RECOMMENDATIONS:
+================
+- Consider top 3 projects for immediate assignment
+- Schedule interviews with project managers
+- Verify specific technical requirements
+- Confirm availability dates with both parties
+
+NOTES:
+======
+This report is generated automatically based on skill matching algorithms.
+Please verify all recommendations with manual review and stakeholder input.
+"""
+    
+    return report
+
 def main():
     """Main Streamlit application"""
     # Header
@@ -505,12 +924,30 @@ def main():
     
     page = st.sidebar.selectbox(
         "Choose a page:",
-        ["🏠 Home & Overview", "⚙️ Run Matching Pipeline", "📊 View Recommendations", "🔍 Search & Explore"],
-        index=["🏠 Home & Overview", "⚙️ Run Matching Pipeline", "📊 View Recommendations", "🔍 Search & Explore"].index(st.session_state.current_page) if st.session_state.current_page in ["🏠 Home & Overview", "⚙️ Run Matching Pipeline", "📊 View Recommendations", "🔍 Search & Explore"] else 0
+        ["🏠 Home & Overview", "⚙️ Run Matching Pipeline", "📊 View Recommendations", "🔍 Search & Explore", "👔 HR Employee-Project Matcher"],
+        index=["🏠 Home & Overview", "⚙️ Run Matching Pipeline", "📊 View Recommendations", "🔍 Search & Explore", "👔 HR Employee-Project Matcher"].index(st.session_state.current_page) if st.session_state.current_page in ["🏠 Home & Overview", "⚙️ Run Matching Pipeline", "📊 View Recommendations", "🔍 Search & Explore", "👔 HR Employee-Project Matcher"] else 0
     )
     
     # Update current page in session state
     st.session_state.current_page = page
+    
+    # Add contextual sidebar information
+    if page == "👔 HR Employee-Project Matcher":
+        st.sidebar.markdown("---")
+        st.sidebar.markdown("### 💡 HR Matching Tips")
+        st.sidebar.markdown("""
+        **For best results:**
+        - Provide detailed experience description
+        - Include specific technologies and tools
+        - Mention project types and domains
+        - Specify years of experience accurately
+        
+        **The system will find projects that:**
+        - Match technical skills
+        - Align with experience level
+        - Consider location preferences
+        - Respect project requirements
+        """)
     
     # Load basic data for all pages
     df_emp, df_proj, data_success = load_data()
@@ -629,6 +1066,9 @@ def main():
     
     elif page == "🔍 Search & Explore":
         project_employee_search()
+    
+    elif page == "👔 HR Employee-Project Matcher":
+        hr_employee_project_matcher()
     
     # Footer
     st.markdown("---")
