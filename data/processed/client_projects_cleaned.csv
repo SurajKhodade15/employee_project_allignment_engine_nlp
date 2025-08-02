@@ -27,7 +27,7 @@ P325,Ortega Group,"looking for expertise in aws, kubernetes, and container orche
 P326,Ramos-Smith,"looking for expertise in big data, ci/cd pipelines, and scrum to work on a restful api design project.","big data, ci/cd pipelines, scrum",Delhi,Open
 P327,Chung-Alvarez,"looking for expertise in tensorflow, penetration testing, and devops practices to work on a machine learning model deployment project.","devops practices, penetration testing, tensorflow",Delhi,Closed
 P328,"Garner, Doyle and Oliver","looking for expertise in docker, machine learning, and graphql to work on a machine learning model deployment project.","docker, graphql, machine learning",Chennai,Open
-P329,"Bowman, Sanchez and Lowe","looking for expertise in .net, scrum methodology, and serverless architecture to work on a data analytics project.",".net, scrum methodology, serverless architecture",Pune,Open
+P329,"Bowman, Sanchez and Lowe","looking for expertise in .net, scrum methodology, and serverless architecture to work on a data analytics project.","Dot Net, scrum methodology, serverless architecture",Pune,Open
 P330,Hughes-Church,"looking for expertise in data lake implementation, cybersecurity, and graphql api development to work on a web application development project.","cybersecurity, data lake implementation, graphql api development",Pune,Open
 P331,Williams-Sharp,"looking for expertise in agile, data visualization, and azure to work on a data warehousing project.","agile, azure, data visualization",Chennai,Closed
 P332,Hunter-Harding,"looking for expertise in agile, iot, and big data to work on a restful api design project.","agile, big data, iot",Mumbai,Open
@@ -38,11 +38,11 @@ P336,"Lee, Berry and Li","looking for expertise in nosql database management, sq
 P337,Carlson-Anderson,"looking for expertise in microservices, sql, and machine learning to work on a data lake implementation project.","machine learning, microservices, sql",Delhi,Closed
 P338,"Petty, Duran and Duncan","looking for expertise in docker, kubernetes, and aws to work on a ui/ux design project.","aws, docker, kubernetes",Delhi,Open
 P339,"Wheeler, Lewis and Nash","looking for expertise in microservices, graphql api development, and nosql database management to work on a machine learning model deployment project.","graphql api development, microservices, nosql database management",Pune,Closed
-P340,Gray LLC,"looking for expertise in nosql, .net, and ci/cd pipelines to work on a cloud migration project.",".net, ci/cd pipelines, nosql",Delhi,Closed
+P340,Gray LLC,"looking for expertise in nosql, .net, and ci/cd pipelines to work on a cloud migration project.","Dot Net, ci/cd pipelines, nosql",Delhi,Closed
 P341,Tyler-Jones,"looking for expertise in nosql database management, microservices, and agile project management to work on a cloud migration project.","agile project management, microservices, nosql database management",Chennai,Closed
 P342,Fisher Ltd,"looking for expertise in iot, robotic process automation, and sql to work on a nosql database management project.","iot, robotic process automation, sql",Delhi,Closed
 P343,Adams Inc,"looking for expertise in business intelligence, node.js, and ci/cd pipelines to work on a cloud security project.","business intelligence, ci/cd pipelines, node.js",Delhi,Open
-P344,Gray-Crawford,"looking for expertise in .net, real-time data processing, and blockchain to work on a sql database management project.",".net, blockchain, real-time data processing",Delhi,Closed
+P344,Gray-Crawford,"looking for expertise in .net, real-time data processing, and blockchain to work on a sql database management project.","Dot Net, blockchain, real-time data processing",Delhi,Closed
 P345,Acosta Group,"looking for expertise in ui/ux design, graphql api development, and agile project management to work on a data governance project.","agile project management, graphql api development, ui/ux design",Chennai,Closed
 P346,"Yu, Doyle and Davidson","looking for expertise in sql, azure, and data warehousing to work on a devops practices project.","azure, data warehousing, sql",Pune,Closed
 P347,Myers-Reed,"looking for expertise in graphql, data engineering, and data lake implementation to work on a network security project.","data engineering, data lake implementation, graphql",Mumbai,Closed
@@ -64,11 +64,11 @@ P362,White-Le,"looking for expertise in cybersecurity, data privacy compliance, 
 P363,"Banks, Johnson and Branch","looking for expertise in graphql, incident response, and rest apis to work on a web application development project.","graphql, incident response, rest apis",Mumbai,Open
 P364,Carpenter and Sons,"looking for expertise in quantum computing, robotic process automation, and blockchain to work on a data quality management project.","blockchain, quantum computing, robotic process automation",Mumbai,Closed
 P365,"Hill, Adams and May","looking for expertise in network security, quantum computing, and nosql database management to work on a ci/cd pipelines project.","network security, nosql database management, quantum computing",Delhi,Open
-P366,Jones Group,"looking for expertise in .net, big data, and data governance to work on a machine learning model deployment project.",".net, big data, data governance",Pune,Closed
+P366,Jones Group,"looking for expertise in .net, big data, and data governance to work on a machine learning model deployment project.","Dot Net, big data, data governance",Pune,Closed
 P367,Smith-Evans,"looking for expertise in serverless architecture, terraform, and aws to work on a web application development project.","aws, serverless architecture, terraform",Mumbai,Closed
 P368,Herrera LLC,"looking for expertise in node.js, quantum computing, and kubernetes to work on a nosql database management project.","kubernetes, node.js, quantum computing",Mumbai,Open
 P369,Ramos-Foster,"looking for expertise in data warehousing, scrum methodology, and iot to work on a scrum methodology project.","data warehousing, iot, scrum methodology",Chennai,Open
-P370,Jones LLC,"looking for expertise in .net, java, and python to work on a automation pipeline project.",".net, java, python",Mumbai,Open
+P370,Jones LLC,"looking for expertise in .net, java, and python to work on a automation pipeline project.","Dot Net, java, python",Mumbai,Open
 P371,"Smith, Reid and Hernandez","looking for expertise in healthcare analytics, data governance, and agile to work on a mobile app development project.","agile, data governance, healthcare analytics",Mumbai,Open
 P372,West-Hamilton,"looking for expertise in network security, big data, and cybersecurity to work on a agile project management project.","big data, cybersecurity, network security",Delhi,Open
 P373,Fischer-Thomas,"looking for expertise in node.js, postgresql, and azure to work on a full stack development project.","azure, node.js, postgresql",Delhi,Closed
@@ -85,7 +85,7 @@ P383,Davis PLC,"looking for expertise in java, blockchain, and jenkins to work o
 P384,Wilson-Cunningham,"looking for expertise in blockchain, jenkins, and api development to work on a ai research project.","api development, blockchain, jenkins",Pune,Open
 P385,Bailey-Valdez,"looking for expertise in robotic process automation, machine learning, and ci/cd pipelines to work on a data engineering project.","ci/cd pipelines, machine learning, robotic process automation",Delhi,Open
 P386,Roberts Inc,"looking for expertise in ci/cd, docker, and data warehousing to work on a robotic process automation project.","ci/cd, data warehousing, docker",Chennai,Open
-P387,Lyons Ltd,"looking for expertise in .net, rest apis, and blockchain to work on a devops practices project.",".net, blockchain, rest apis",Delhi,Closed
+P387,Lyons Ltd,"looking for expertise in .net, rest apis, and blockchain to work on a devops practices project.","Dot Net, blockchain, rest apis",Delhi,Closed
 P388,"Wright, Faulkner and Burke","looking for expertise in healthcare analytics, scrum, and agile project management to work on a agile project management project.","agile project management, healthcare analytics, scrum",Mumbai,Open
 P389,"Ware, Farmer and Fernandez","looking for expertise in nosql database management, api development, and big data to work on a penetration testing project.","api development, big data, nosql database management",Mumbai,Closed
 P390,Trujillo Inc,"looking for expertise in blockchain, real-time data processing, and network security to work on a cloud migration project.","blockchain, network security, real-time data processing",Mumbai,Closed
