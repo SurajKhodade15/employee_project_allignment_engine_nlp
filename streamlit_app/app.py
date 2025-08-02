@@ -86,6 +86,12 @@ if 'data_loaded' not in st.session_state:
     st.session_state.data_loaded = False
 if 'recommendations' not in st.session_state:
     st.session_state.recommendations = None
+if 'pipeline_completed' not in st.session_state:
+    st.session_state.pipeline_completed = False
+if 'pipeline_stats' not in st.session_state:
+    st.session_state.pipeline_stats = None
+if 'current_page' not in st.session_state:
+    st.session_state.current_page = "🏠 Home & Overview"
 
 def load_data():
     """Load data with caching"""
@@ -205,24 +211,40 @@ def create_data_overview_charts(df_emp, df_proj):
 
 def run_matching_pipeline():
     """Run the complete matching pipeline"""
-    with st.spinner("🚀 Running matching pipeline... This may take a few minutes."):
-        try:
-            # Load data
+    try:
+        # Create progress container
+        progress_container = st.container()
+        
+        with progress_container:
+            progress_bar = st.progress(0)
+            status_text = st.empty()
+            
+            # Step 1: Load data
+            status_text.text("📂 Loading and preprocessing data...")
+            progress_bar.progress(10)
+            
             df_emp, df_proj, success = load_data()
             if not success:
                 st.error("Failed to load data")
                 return False
             
-            # Feature extraction
+            progress_bar.progress(20)
+            
+            # Step 2: Feature extraction
+            status_text.text("🔧 Extracting features...")
             feature_extractor = FeatureExtractor(st.session_state.config)
             features = feature_extractor.extract_all_features(df_emp, df_proj)
+            progress_bar.progress(50)
             
-            # Matching
+            # Step 3: Matching
+            status_text.text("🎯 Setting up matching engine...")
             matcher = EmployeeProjectMatcher(df_emp, st.session_state.config)
             matcher.add_experience_filter(min_years=3.0)
             matcher.add_similarity_threshold_filter(min_similarity=0.05)
+            progress_bar.progress(60)
             
-            # Compute similarities
+            # Step 4: Compute similarities
+            status_text.text("🔬 Computing similarity matrices...")
             binary_similarity = matcher.compute_similarity_matrix(
                 features['employee_binary'], features['project_binary'], 'cosine'
             )
@@ -234,29 +256,42 @@ def run_matching_pipeline():
             hybrid_similarity = matcher.compute_hybrid_similarity(
                 binary_similarity, tfidf_similarity, 0.7, 0.3
             )
+            progress_bar.progress(80)
             
-            # Generate recommendations
+            # Step 5: Generate recommendations
+            status_text.text("📊 Generating recommendations...")
             recommendations_df, stats = matcher.generate_all_recommendations(hybrid_similarity)
             enhanced_recommendations = matcher.enhance_recommendations(recommendations_df, df_proj)
+            progress_bar.progress(90)
             
-            # Save results
+            # Step 6: Save results
+            status_text.text("💾 Saving results...")
             similarity_matrices = {
                 'binary': binary_similarity,
                 'tfidf': tfidf_similarity,
                 'hybrid': hybrid_similarity
             }
             matcher.save_results(enhanced_recommendations, similarity_matrices)
+            progress_bar.progress(100)
             
+            # Update session state
             st.session_state.recommendations = enhanced_recommendations
+            st.session_state.pipeline_completed = True
+            st.session_state.pipeline_stats = {
+                'total_recommendations': len(enhanced_recommendations),
+                'unique_projects': enhanced_recommendations['Project_ID'].nunique(),
+                'unique_employees': enhanced_recommendations['Employee_ID'].nunique(),
+                'avg_similarity': enhanced_recommendations['Similarity_Score'].mean()
+            }
             
-            st.success("✅ Matching pipeline completed successfully!")
-            st.balloons()
+            status_text.text("✅ Pipeline completed successfully!")
+            progress_bar.empty()
             
             return True
             
-        except Exception as e:
-            st.error(f"❌ Pipeline failed: {str(e)}")
-            return False
+    except Exception as e:
+        st.error(f"❌ Pipeline failed: {str(e)}")
+        return False
 
 def display_recommendations_analysis(recommendations):
     """Display comprehensive recommendations analysis"""
@@ -470,8 +505,12 @@ def main():
     
     page = st.sidebar.selectbox(
         "Choose a page:",
-        ["🏠 Home & Overview", "⚙️ Run Matching Pipeline", "📊 View Recommendations", "🔍 Search & Explore"]
+        ["🏠 Home & Overview", "⚙️ Run Matching Pipeline", "📊 View Recommendations", "🔍 Search & Explore"],
+        index=["🏠 Home & Overview", "⚙️ Run Matching Pipeline", "📊 View Recommendations", "🔍 Search & Explore"].index(st.session_state.current_page) if st.session_state.current_page in ["🏠 Home & Overview", "⚙️ Run Matching Pipeline", "📊 View Recommendations", "🔍 Search & Explore"] else 0
     )
+    
+    # Update current page in session state
+    st.session_state.current_page = page
     
     # Load basic data for all pages
     df_emp, df_proj, data_success = load_data()
@@ -490,17 +529,60 @@ def main():
     elif page == "⚙️ Run Matching Pipeline":
         st.header("🚀 Run Matching Pipeline")
         
-        st.markdown("""
-        <div class="warning-box">
-            <strong>⚠️ Important:</strong> Running the pipeline will process all data and generate new recommendations. 
-            This process may take several minutes depending on your data size.
-        </div>
-        """, unsafe_allow_html=True)
-        
-        if st.button("🚀 Start Matching Pipeline", type="primary"):
-            success = run_matching_pipeline()
-            if success:
+        # Show success message if pipeline was just completed
+        if st.session_state.pipeline_completed:
+            st.success("✅ Matching pipeline completed successfully!")
+            
+            if st.session_state.pipeline_stats:
+                stats = st.session_state.pipeline_stats
+                
+                col1, col2, col3, col4 = st.columns(4)
+                with col1:
+                    st.metric("📋 Total Recommendations", stats['total_recommendations'])
+                with col2:
+                    st.metric("🎯 Unique Projects", stats['unique_projects'])
+                with col3:
+                    st.metric("👥 Unique Employees", stats['unique_employees'])
+                with col4:
+                    st.metric("📊 Avg Similarity", f"{stats['avg_similarity']:.3f}")
+            
+            st.markdown("""
+            <div class="success-box">
+                <strong>🎉 Pipeline Results:</strong><br>
+                ✅ Data preprocessing completed<br>
+                ✅ Feature extraction completed<br>
+                ✅ Similarity computation completed<br>
+                ✅ Recommendations generated and saved<br>
+                📁 Results saved to data/outputs/ folder
+            </div>
+            """, unsafe_allow_html=True)
+            
+            # Button to view recommendations
+            if st.button("📊 View Recommendations", type="primary"):
+                st.session_state.current_page = "📊 View Recommendations"
                 st.rerun()
+            
+            # Button to reset and run again
+            if st.button("🔄 Run Pipeline Again"):
+                st.session_state.pipeline_completed = False
+                st.session_state.pipeline_stats = None
+                st.rerun()
+        
+        else:
+            st.markdown("""
+            <div class="warning-box">
+                <strong>⚠️ Important:</strong> Running the pipeline will process all data and generate new recommendations. 
+                This process may take several minutes depending on your data size.
+            </div>
+            """, unsafe_allow_html=True)
+            
+            if st.button("🚀 Start Matching Pipeline", type="primary"):
+                success = run_matching_pipeline()
+                if success:
+                    st.balloons()
+                    st.rerun()
+                else:
+                    st.error("❌ Pipeline failed. Please check the logs for details.")
     
     elif page == "📊 View Recommendations":
         if recommendations is not None:
