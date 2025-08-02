@@ -116,14 +116,47 @@ def categorize_experience(years: float) -> str:
 
 
 def format_skills_text(skills_text: str) -> str:
-    """Clean and format skills text"""
+    """Clean and format skills text, extracting skills from experience descriptions"""
     if pd.isna(skills_text) or skills_text == '':
         return ''
     
-    # Basic cleaning
+    # Convert to string and basic cleaning
     skills_text = str(skills_text).strip()
-    skills_text = skills_text.replace(',', ' ')
-    skills_text = skills_text.replace(';', ' ')
-    skills_text = ' '.join(skills_text.split())  # Remove extra spaces
     
-    return skills_text.lower()
+    # Extract skills from experience text if it contains narrative
+    # Look for patterns like "involving X, Y, and Z" or "expertise in A, B, C"
+    import re
+    
+    # Pattern to extract skills from experience descriptions
+    skill_patterns = [
+        r'involving ([^.]+)',  # "involving X, Y, and Z"
+        r'expertise in ([^.]+)',  # "expertise in A, B, C"
+        r'experience with ([^.]+)',  # "experience with X, Y"
+        r'worked on ([^.]+)',  # "worked on X, Y"
+        r'skills include ([^.]+)',  # "skills include X, Y"
+    ]
+    
+    extracted_skills = []
+    for pattern in skill_patterns:
+        matches = re.findall(pattern, skills_text, re.IGNORECASE)
+        for match in matches:
+            # Clean the matched text
+            skills_part = match.strip()
+            # Remove common words and phrases
+            skills_part = re.sub(r'\b(projects?|solutions?|for|domain|and|the|a|an|in|on|with|using)\b', '', skills_part, flags=re.IGNORECASE)
+            extracted_skills.append(skills_part)
+    
+    # If no patterns matched, use the whole text
+    if not extracted_skills:
+        extracted_skills = [skills_text]
+    
+    # Combine all extracted skills
+    combined_skills = ' '.join(extracted_skills)
+    
+    # Basic text cleaning
+    combined_skills = combined_skills.replace(',', ' ')
+    combined_skills = combined_skills.replace(';', ' ')
+    combined_skills = combined_skills.replace('.', ' ')
+    combined_skills = ' '.join(combined_skills.split())  # Remove extra spaces
+    
+    return combined_skills.lower()

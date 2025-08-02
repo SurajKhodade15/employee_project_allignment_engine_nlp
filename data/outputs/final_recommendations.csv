@@ -1,0 +1,501 @@
+Project_ID,Employee_ID,Similarity_Score,Rank,Department,Years_Experience,Location_Employee,Client_Name,Location_Project,Status,Required_Skills,Location_Match,Experience_Level,Similarity_Category,Recommendation_Strength
+P306,E315,0.8025592772666176,1,DevOps,12.2,Pune,"Noble, Rosales and Marshall",Mumbai,Open,azure penetration testing ci/cd pipelines,False,Expert,Excellent,Good
+P306,E1093,0.6147870442291771,2,Software Development,8.0,Mumbai,"Noble, Rosales and Marshall",Mumbai,Open,azure penetration testing ci/cd pipelines,True,Senior,High,Strong
+P306,E697,0.5600591806035203,3,Cybersecurity,13.5,Mumbai,"Noble, Rosales and Marshall",Mumbai,Open,azure penetration testing ci/cd pipelines,True,Expert,Medium,Good
+P306,E632,0.48873402145704614,4,Cybersecurity,3.3,Delhi,"Noble, Rosales and Marshall",Mumbai,Open,azure penetration testing ci/cd pipelines,False,Mid-Level,Medium,Good
+P306,E275,0.4870939236596369,5,Data Science,10.7,Mumbai,"Noble, Rosales and Marshall",Mumbai,Open,azure penetration testing ci/cd pipelines,True,Senior,Medium,Good
+P311,E593,0.5921623750331093,1,Cybersecurity,4.3,Chennai,Garcia-Hernandez,Pune,Open,tensorflow scrum jenkins,False,Mid-Level,Medium,Good
+P311,E805,0.5254533062493539,2,AI Research,10.4,Pune,Garcia-Hernandez,Pune,Open,tensorflow scrum jenkins,True,Senior,Medium,Good
+P311,E332,0.4267631198330804,3,Cybersecurity,6.2,Pune,Garcia-Hernandez,Pune,Open,tensorflow scrum jenkins,True,Mid-Level,Medium,Good
+P311,E864,0.3990578129117499,4,Cybersecurity,4.9,Chennai,Garcia-Hernandez,Pune,Open,tensorflow scrum jenkins,False,Mid-Level,Medium,Fair
+P311,E1017,0.39574431576933505,5,Software Development,14.8,Pune,Garcia-Hernandez,Pune,Open,tensorflow scrum jenkins,True,Expert,Medium,Fair
+P364,E420,0.7695554058339324,1,Cybersecurity,11.9,Mumbai,Carpenter and Sons,Mumbai,Closed,quantum computing robotic process automation blockchain,True,Senior,High,Strong
+P364,E935,0.7512867768940792,2,Software Development,8.8,Pune,Carpenter and Sons,Mumbai,Closed,quantum computing robotic process automation blockchain,False,Senior,High,Good
+P364,E1002,0.6373896475510078,3,AI Research,8.2,Chennai,Carpenter and Sons,Mumbai,Closed,quantum computing robotic process automation blockchain,False,Senior,High,Good
+P364,E729,0.5945338178565115,4,AI Research,13.8,Delhi,Carpenter and Sons,Mumbai,Closed,quantum computing robotic process automation blockchain,False,Expert,Medium,Good
+P364,E744,0.5699928929554827,5,DevOps,6.8,Chennai,Carpenter and Sons,Mumbai,Closed,quantum computing robotic process automation blockchain,False,Mid-Level,Medium,Good
+P351,E962,0.612011195900288,1,Cybersecurity,5.8,Chennai,"Peterson, Green and Greene",Pune,Closed,ci/cd blockchain scrum,False,Mid-Level,High,Good
+P351,E975,0.4769942746100424,2,Cloud Engineering,3.5,Mumbai,"Peterson, Green and Greene",Pune,Closed,ci/cd blockchain scrum,False,Mid-Level,Medium,Good
+P351,E301,0.4766593092636978,3,Cloud Engineering,4.3,Delhi,"Peterson, Green and Greene",Pune,Closed,ci/cd blockchain scrum,False,Mid-Level,Medium,Good
+P351,E1077,0.4646502364938411,4,Cloud Engineering,7.7,Delhi,"Peterson, Green and Greene",Pune,Closed,ci/cd blockchain scrum,False,Senior,Medium,Good
+P351,E934,0.46295163398245126,5,Cloud Engineering,8.1,Chennai,"Peterson, Green and Greene",Pune,Closed,ci/cd blockchain scrum,False,Senior,Medium,Good
+P314,E1077,0.6130131350882895,1,Cloud Engineering,7.7,Delhi,Robbins PLC,Delhi,Closed,microservices ci/cd scrum methodology,True,Senior,High,Strong
+P314,E636,0.6107763212882107,2,Cloud Engineering,4.0,Mumbai,Robbins PLC,Delhi,Closed,microservices ci/cd scrum methodology,False,Mid-Level,High,Good
+P314,E914,0.5658990147218586,3,Software Development,9.5,Delhi,Robbins PLC,Delhi,Closed,microservices ci/cd scrum methodology,True,Senior,Medium,Good
+P314,E462,0.5300600598127709,4,AI Research,3.9,Mumbai,Robbins PLC,Delhi,Closed,microservices ci/cd scrum methodology,False,Mid-Level,Medium,Good
+P314,E624,0.5275370239869615,5,Cybersecurity,14.2,Mumbai,Robbins PLC,Delhi,Closed,microservices ci/cd scrum methodology,False,Expert,Medium,Good
+P378,E969,0.5908158304799132,1,AI Research,3.0,Mumbai,Torres-Wong,Delhi,Closed,devops practices kubernetes aws,False,Mid-Level,Medium,Good
+P378,E724,0.5449645444217746,2,DevOps,8.2,Delhi,Torres-Wong,Delhi,Closed,devops practices kubernetes aws,True,Senior,Medium,Good
+P378,E238,0.5167735799708806,3,Data Science,8.7,Delhi,Torres-Wong,Delhi,Closed,devops practices kubernetes aws,True,Senior,Medium,Good
+P378,E861,0.5010310857698735,4,Software Development,12.4,Chennai,Torres-Wong,Delhi,Closed,devops practices kubernetes aws,False,Expert,Medium,Good
+P378,E261,0.4617662132501268,5,Cloud Engineering,10.5,Delhi,Torres-Wong,Delhi,Closed,devops practices kubernetes aws,True,Senior,Medium,Good
+P335,E780,0.7023136693459714,1,Cybersecurity,8.4,Chennai,Kim Ltd,Chennai,Open,ci/cd python cloud security,True,Senior,High,Strong
+P335,E123,0.6413160720763971,2,AI Research,13.1,Delhi,Kim Ltd,Chennai,Open,ci/cd python cloud security,False,Expert,High,Good
+P335,E1038,0.5627416972597132,3,Cybersecurity,3.2,Mumbai,Kim Ltd,Chennai,Open,ci/cd python cloud security,False,Mid-Level,Medium,Good
+P335,E282,0.5367635073528371,4,Software Development,14.5,Pune,Kim Ltd,Chennai,Open,ci/cd python cloud security,False,Expert,Medium,Good
+P335,E702,0.5295164954414238,5,AI Research,6.6,Chennai,Kim Ltd,Chennai,Open,ci/cd python cloud security,True,Mid-Level,Medium,Good
+P362,E328,0.7189643740395343,1,Data Science,8.8,Pune,White-Le,Mumbai,Open,cybersecurity data privacy compliance serverless architecture,False,Senior,High,Good
+P362,E611,0.6048186395098717,2,Cloud Engineering,12.6,Delhi,White-Le,Mumbai,Open,cybersecurity data privacy compliance serverless architecture,False,Expert,High,Good
+P362,E932,0.5896169152969788,3,Cybersecurity,11.4,Pune,White-Le,Mumbai,Open,cybersecurity data privacy compliance serverless architecture,False,Senior,Medium,Good
+P362,E529,0.5674336688735626,4,Cybersecurity,9.9,Chennai,White-Le,Mumbai,Open,cybersecurity data privacy compliance serverless architecture,False,Senior,Medium,Good
+P362,E480,0.4899334354272694,5,Data Science,12.8,Chennai,White-Le,Mumbai,Open,cybersecurity data privacy compliance serverless architecture,False,Expert,Medium,Good
+P341,E689,0.6831977091510194,1,Cybersecurity,13.4,Pune,Tyler-Jones,Chennai,Closed,nosql database management microservices agile project management,False,Expert,High,Good
+P341,E1029,0.6604298352573837,2,Software Development,10.4,Delhi,Tyler-Jones,Chennai,Closed,nosql database management microservices agile project management,False,Senior,High,Good
+P341,E909,0.6552657290218835,3,AI Research,10.5,Delhi,Tyler-Jones,Chennai,Closed,nosql database management microservices agile project management,False,Senior,High,Good
+P341,E1061,0.6435953277978183,4,Cloud Engineering,8.0,Delhi,Tyler-Jones,Chennai,Closed,nosql database management microservices agile project management,False,Senior,High,Good
+P341,E366,0.6408830995478081,5,Cybersecurity,8.5,Chennai,Tyler-Jones,Chennai,Closed,nosql database management microservices agile project management,True,Senior,High,Strong
+P323,E301,0.5427583076333585,1,Cloud Engineering,4.3,Delhi,Fuentes-Potter,Delhi,Closed,docker python ci/cd,True,Mid-Level,Medium,Good
+P323,E207,0.4757566973050094,2,Software Development,7.5,Chennai,Fuentes-Potter,Delhi,Closed,docker python ci/cd,False,Senior,Medium,Good
+P323,E816,0.4668315835768076,3,AI Research,9.0,Pune,Fuentes-Potter,Delhi,Closed,docker python ci/cd,False,Senior,Medium,Good
+P323,E219,0.46063077604689595,4,Data Science,6.9,Chennai,Fuentes-Potter,Delhi,Closed,docker python ci/cd,False,Mid-Level,Medium,Good
+P323,E894,0.45878065136935486,5,Software Development,10.0,Delhi,Fuentes-Potter,Delhi,Closed,docker python ci/cd,True,Senior,Medium,Good
+P399,E174,0.763853879334377,1,Software Development,9.0,Chennai,"Palmer, Davis and Burns",Mumbai,Closed,cybersecurity ci/cd pipelines devops practices,False,Senior,High,Good
+P399,E267,0.6524676433063406,2,Cloud Engineering,11.2,Pune,"Palmer, Davis and Burns",Mumbai,Closed,cybersecurity ci/cd pipelines devops practices,False,Senior,High,Good
+P399,E549,0.6355564170975906,3,AI Research,9.5,Chennai,"Palmer, Davis and Burns",Mumbai,Closed,cybersecurity ci/cd pipelines devops practices,False,Senior,High,Good
+P399,E924,0.6288398202485159,4,Software Development,14.6,Chennai,"Palmer, Davis and Burns",Mumbai,Closed,cybersecurity ci/cd pipelines devops practices,False,Expert,High,Good
+P399,E862,0.562130550646174,5,AI Research,14.4,Pune,"Palmer, Davis and Burns",Mumbai,Closed,cybersecurity ci/cd pipelines devops practices,False,Expert,Medium,Good
+P387,E288,0.6719782830544551,1,Cybersecurity,13.9,Pune,Lyons Ltd,Delhi,Closed,net rest apis blockchain,False,Expert,High,Good
+P387,E1003,0.6711034182485459,2,Software Development,4.2,Mumbai,Lyons Ltd,Delhi,Closed,net rest apis blockchain,False,Mid-Level,High,Good
+P387,E1053,0.6363128253041309,3,Data Science,10.1,Pune,Lyons Ltd,Delhi,Closed,net rest apis blockchain,False,Senior,High,Good
+P387,E1049,0.6184096738195454,4,Data Science,3.4,Pune,Lyons Ltd,Delhi,Closed,net rest apis blockchain,False,Mid-Level,High,Good
+P387,E1052,0.5926528091105285,5,Cybersecurity,5.9,Delhi,Lyons Ltd,Delhi,Closed,net rest apis blockchain,True,Mid-Level,Medium,Good
+P377,E529,0.8340690139755312,1,Cybersecurity,9.9,Chennai,"Dixon, Fitzpatrick and Stephens",Chennai,Closed,cloud security data privacy compliance python,True,Senior,Excellent,Strong
+P377,E480,0.7109989307287382,2,Data Science,12.8,Chennai,"Dixon, Fitzpatrick and Stephens",Chennai,Closed,cloud security data privacy compliance python,True,Expert,High,Strong
+P377,E735,0.6855409377667093,3,Software Development,5.9,Chennai,"Dixon, Fitzpatrick and Stephens",Chennai,Closed,cloud security data privacy compliance python,True,Mid-Level,High,Strong
+P377,E548,0.681927358454032,4,Cloud Engineering,3.3,Pune,"Dixon, Fitzpatrick and Stephens",Chennai,Closed,cloud security data privacy compliance python,False,Mid-Level,High,Good
+P377,E456,0.6651935484484951,5,Cloud Engineering,13.4,Chennai,"Dixon, Fitzpatrick and Stephens",Chennai,Closed,cloud security data privacy compliance python,True,Expert,High,Strong
+P328,E1054,0.5961868531891136,1,DevOps,7.3,Pune,"Garner, Doyle and Oliver",Chennai,Open,docker machine learning graphql,False,Senior,Medium,Good
+P328,E1094,0.5733828213067514,2,DevOps,9.8,Chennai,"Garner, Doyle and Oliver",Chennai,Open,docker machine learning graphql,True,Senior,Medium,Good
+P328,E873,0.5329341043045628,3,Cybersecurity,10.7,Delhi,"Garner, Doyle and Oliver",Chennai,Open,docker machine learning graphql,False,Senior,Medium,Good
+P328,E528,0.4525808064768557,4,Cybersecurity,13.7,Delhi,"Garner, Doyle and Oliver",Chennai,Open,docker machine learning graphql,False,Expert,Medium,Good
+P328,E413,0.4393278835835371,5,Cybersecurity,14.7,Pune,"Garner, Doyle and Oliver",Chennai,Open,docker machine learning graphql,False,Expert,Medium,Good
+P307,E274,0.8884512217771162,1,Data Science,12.1,Pune,"Lawson, Kelly and Edwards",Pune,Closed,scrum data engineering nosql database management,True,Expert,Excellent,Strong
+P307,E366,0.7733388632704363,2,Cybersecurity,8.5,Chennai,"Lawson, Kelly and Edwards",Pune,Closed,scrum data engineering nosql database management,False,Senior,High,Good
+P307,E633,0.6844927446034778,3,DevOps,7.3,Pune,"Lawson, Kelly and Edwards",Pune,Closed,scrum data engineering nosql database management,True,Senior,High,Strong
+P307,E765,0.6712174022251046,4,Software Development,13.9,Mumbai,"Lawson, Kelly and Edwards",Pune,Closed,scrum data engineering nosql database management,False,Expert,High,Good
+P307,E311,0.6467457030417284,5,Software Development,5.6,Mumbai,"Lawson, Kelly and Edwards",Pune,Closed,scrum data engineering nosql database management,False,Mid-Level,High,Good
+P369,E983,0.6664316819571308,1,Data Science,9.8,Mumbai,Ramos-Foster,Chennai,Open,data warehousing scrum methodology iot,False,Senior,High,Good
+P369,E429,0.6482895227466322,2,DevOps,6.2,Chennai,Ramos-Foster,Chennai,Open,data warehousing scrum methodology iot,True,Mid-Level,High,Strong
+P369,E1010,0.5874668577360977,3,DevOps,12.9,Mumbai,Ramos-Foster,Chennai,Open,data warehousing scrum methodology iot,False,Expert,Medium,Good
+P369,E625,0.5677656789646321,4,Cloud Engineering,12.1,Delhi,Ramos-Foster,Chennai,Open,data warehousing scrum methodology iot,False,Expert,Medium,Good
+P369,E686,0.5180738648128548,5,AI Research,13.4,Delhi,Ramos-Foster,Chennai,Open,data warehousing scrum methodology iot,False,Expert,Medium,Good
+P342,E1100,0.6759308611488826,1,Cybersecurity,9.8,Mumbai,Fisher Ltd,Delhi,Closed,iot robotic process automation sql,False,Senior,High,Good
+P342,E374,0.654728900541478,2,Software Development,9.2,Mumbai,Fisher Ltd,Delhi,Closed,iot robotic process automation sql,False,Senior,High,Good
+P342,E228,0.6097119670210034,3,AI Research,7.1,Delhi,Fisher Ltd,Delhi,Closed,iot robotic process automation sql,True,Senior,High,Strong
+P342,E854,0.6077478206822029,4,AI Research,11.6,Chennai,Fisher Ltd,Delhi,Closed,iot robotic process automation sql,False,Senior,High,Good
+P342,E1095,0.6030740566453449,5,Cloud Engineering,11.3,Delhi,Fisher Ltd,Delhi,Closed,iot robotic process automation sql,True,Senior,High,Strong
+P347,E516,0.6998676096912346,1,DevOps,9.1,Chennai,Myers-Reed,Mumbai,Closed,graphql data engineering data lake implementation,False,Senior,High,Good
+P347,E423,0.6339293221050472,2,Software Development,10.1,Mumbai,Myers-Reed,Mumbai,Closed,graphql data engineering data lake implementation,True,Senior,High,Strong
+P347,E577,0.6131040351524648,3,Data Science,9.2,Mumbai,Myers-Reed,Mumbai,Closed,graphql data engineering data lake implementation,True,Senior,High,Strong
+P347,E889,0.6002465135677583,4,DevOps,11.7,Delhi,Myers-Reed,Mumbai,Closed,graphql data engineering data lake implementation,False,Senior,High,Good
+P347,E1000,0.5995820978829999,5,Software Development,13.5,Chennai,Myers-Reed,Mumbai,Closed,graphql data engineering data lake implementation,False,Expert,Medium,Good
+P373,E418,0.5904374082330429,1,Cloud Engineering,3.1,Delhi,Fischer-Thomas,Delhi,Closed,node js postgresql azure,True,Mid-Level,Medium,Good
+P373,E472,0.5814072696068902,2,AI Research,12.8,Pune,Fischer-Thomas,Delhi,Closed,node js postgresql azure,False,Expert,Medium,Good
+P373,E996,0.4977528503147144,3,Data Science,14.1,Mumbai,Fischer-Thomas,Delhi,Closed,node js postgresql azure,False,Expert,Medium,Good
+P373,E532,0.3732907612946351,4,DevOps,12.8,Chennai,Fischer-Thomas,Delhi,Closed,node js postgresql azure,False,Expert,Medium,Fair
+P373,E300,0.3613998326008737,5,Cybersecurity,6.7,Chennai,Fischer-Thomas,Delhi,Closed,node js postgresql azure,False,Mid-Level,Medium,Fair
+P374,E789,0.6246343263736323,1,Data Science,12.0,Chennai,"Ross, Gray and Lopez",Delhi,Closed,penetration testing agile project management tensorflow,False,Expert,High,Good
+P374,E762,0.6072453832229874,2,Cloud Engineering,9.3,Delhi,"Ross, Gray and Lopez",Delhi,Closed,penetration testing agile project management tensorflow,True,Senior,High,Strong
+P374,E201,0.5551181991472893,3,Data Science,13.4,Pune,"Ross, Gray and Lopez",Delhi,Closed,penetration testing agile project management tensorflow,False,Expert,Medium,Good
+P374,E828,0.5469747212936535,4,AI Research,8.4,Mumbai,"Ross, Gray and Lopez",Delhi,Closed,penetration testing agile project management tensorflow,False,Senior,Medium,Good
+P374,E1017,0.5178570131181446,5,Software Development,14.8,Pune,"Ross, Gray and Lopez",Delhi,Closed,penetration testing agile project management tensorflow,False,Expert,Medium,Good
+P383,E288,0.49639583647892827,1,Cybersecurity,13.9,Pune,Davis PLC,Pune,Open,java blockchain jenkins,True,Expert,Medium,Good
+P383,E1067,0.29367393448677853,2,DevOps,3.6,Mumbai,Davis PLC,Pune,Open,java blockchain jenkins,False,Mid-Level,Low,Fair
+P383,E1018,0.29155183985331823,3,Software Development,10.9,Delhi,Davis PLC,Pune,Open,java blockchain jenkins,False,Senior,Low,Fair
+P383,E144,0.27287765576131207,4,Data Science,6.1,Pune,Davis PLC,Pune,Open,java blockchain jenkins,True,Mid-Level,Low,Fair
+P383,E305,0.26771522298389483,5,Cybersecurity,3.3,Chennai,Davis PLC,Pune,Open,java blockchain jenkins,False,Mid-Level,Low,Fair
+P384,E517,0.5729953046108692,1,DevOps,10.2,Delhi,Wilson-Cunningham,Pune,Open,blockchain jenkins api development,False,Senior,Medium,Good
+P384,E802,0.5141844407716827,2,Software Development,8.9,Mumbai,Wilson-Cunningham,Pune,Open,blockchain jenkins api development,False,Senior,Medium,Good
+P384,E641,0.4026429169530556,3,Cloud Engineering,4.1,Mumbai,Wilson-Cunningham,Pune,Open,blockchain jenkins api development,False,Mid-Level,Medium,Good
+P384,E302,0.38178200109207133,4,AI Research,7.8,Pune,Wilson-Cunningham,Pune,Open,blockchain jenkins api development,True,Senior,Medium,Fair
+P384,E219,0.37868046196259986,5,Data Science,6.9,Chennai,Wilson-Cunningham,Pune,Open,blockchain jenkins api development,False,Mid-Level,Medium,Fair
+P317,E690,0.685360767649241,1,Software Development,12.3,Delhi,"Thomas, Schneider and Contreras",Pune,Open,real-time data processing ci/cd pipelines agile project management,False,Expert,High,Good
+P317,E400,0.6138450749233123,2,Cloud Engineering,4.5,Mumbai,"Thomas, Schneider and Contreras",Pune,Open,real-time data processing ci/cd pipelines agile project management,False,Mid-Level,High,Good
+P317,E359,0.580482320986572,3,DevOps,4.1,Mumbai,"Thomas, Schneider and Contreras",Pune,Open,real-time data processing ci/cd pipelines agile project management,False,Mid-Level,Medium,Good
+P317,E612,0.5503488694938907,4,DevOps,14.8,Mumbai,"Thomas, Schneider and Contreras",Pune,Open,real-time data processing ci/cd pipelines agile project management,False,Expert,Medium,Good
+P317,E893,0.5359939922310377,5,Software Development,12.2,Chennai,"Thomas, Schneider and Contreras",Pune,Open,real-time data processing ci/cd pipelines agile project management,False,Expert,Medium,Good
+P301,E743,0.7244982430907775,1,Data Science,14.9,Pune,Byrd Ltd,Delhi,Closed,sql database management docker nosql,False,Expert,High,Good
+P301,E182,0.7148441623872418,2,Software Development,14.8,Mumbai,Byrd Ltd,Delhi,Closed,sql database management docker nosql,False,Expert,High,Good
+P301,E225,0.6161320834478184,3,AI Research,13.9,Pune,Byrd Ltd,Delhi,Closed,sql database management docker nosql,False,Expert,High,Good
+P301,E758,0.5917280252725736,4,DevOps,10.2,Chennai,Byrd Ltd,Delhi,Closed,sql database management docker nosql,False,Senior,Medium,Good
+P301,E172,0.5880942308704713,5,Software Development,12.8,Mumbai,Byrd Ltd,Delhi,Closed,sql database management docker nosql,False,Expert,Medium,Good
+P336,E950,0.7435663709659268,1,AI Research,9.0,Mumbai,"Lee, Berry and Li",Delhi,Closed,nosql database management sql data quality management,False,Senior,High,Good
+P336,E767,0.738834119202507,2,Data Science,11.7,Delhi,"Lee, Berry and Li",Delhi,Closed,nosql database management sql data quality management,True,Senior,High,Strong
+P336,E1087,0.7346845744927357,3,AI Research,14.1,Mumbai,"Lee, Berry and Li",Delhi,Closed,nosql database management sql data quality management,False,Expert,High,Good
+P336,E704,0.683114857654376,4,AI Research,4.0,Mumbai,"Lee, Berry and Li",Delhi,Closed,nosql database management sql data quality management,False,Mid-Level,High,Good
+P336,E330,0.6729410605496466,5,Cloud Engineering,13.3,Delhi,"Lee, Berry and Li",Delhi,Closed,nosql database management sql data quality management,True,Expert,High,Strong
+P348,E904,0.6148200707674281,1,Cloud Engineering,11.5,Mumbai,Foster Ltd,Delhi,Open,ci/cd graphql postgresql,False,Senior,High,Good
+P348,E928,0.524710967540367,2,Software Development,6.3,Delhi,Foster Ltd,Delhi,Open,ci/cd graphql postgresql,True,Mid-Level,Medium,Good
+P348,E390,0.5154190293268381,3,Software Development,13.6,Mumbai,Foster Ltd,Delhi,Open,ci/cd graphql postgresql,False,Expert,Medium,Good
+P348,E807,0.49280052231224386,4,DevOps,4.6,Mumbai,Foster Ltd,Delhi,Open,ci/cd graphql postgresql,False,Mid-Level,Medium,Good
+P348,E1045,0.4763716997053009,5,DevOps,6.0,Mumbai,Foster Ltd,Delhi,Open,ci/cd graphql postgresql,False,Mid-Level,Medium,Good
+P331,E121,0.6606406908677347,1,Data Science,9.1,Delhi,Williams-Sharp,Chennai,Closed,agile data visualization azure,False,Senior,High,Good
+P331,E674,0.625749634610663,2,Data Science,10.2,Mumbai,Williams-Sharp,Chennai,Closed,agile data visualization azure,False,Senior,High,Good
+P331,E422,0.5764822538891318,3,DevOps,4.5,Chennai,Williams-Sharp,Chennai,Closed,agile data visualization azure,True,Mid-Level,Medium,Good
+P331,E525,0.5689402608606441,4,Software Development,14.4,Pune,Williams-Sharp,Chennai,Closed,agile data visualization azure,False,Expert,Medium,Good
+P331,E777,0.5388162043562505,5,AI Research,10.1,Pune,Williams-Sharp,Chennai,Closed,agile data visualization azure,False,Senior,Medium,Good
+P324,E109,0.564308337648612,1,Cybersecurity,13.5,Pune,Garza and Sons,Chennai,Open,tensorflow scrum machine learning,False,Expert,Medium,Good
+P324,E263,0.5610122565654947,2,Cybersecurity,6.6,Pune,Garza and Sons,Chennai,Open,tensorflow scrum machine learning,False,Mid-Level,Medium,Good
+P324,E142,0.5527684730995267,3,Cloud Engineering,5.4,Pune,Garza and Sons,Chennai,Open,tensorflow scrum machine learning,False,Mid-Level,Medium,Good
+P324,E221,0.5410961175995934,4,Data Science,4.4,Pune,Garza and Sons,Chennai,Open,tensorflow scrum machine learning,False,Mid-Level,Medium,Good
+P324,E128,0.5405506391093536,5,Data Science,13.2,Mumbai,Garza and Sons,Chennai,Open,tensorflow scrum machine learning,False,Expert,Medium,Good
+P354,E871,0.5560539665235457,1,Software Development,10.9,Delhi,"Carpenter, Vaughn and Fox",Pune,Open,cybersecurity sql microservices,False,Senior,Medium,Good
+P354,E1050,0.5050038758879053,2,AI Research,8.5,Chennai,"Carpenter, Vaughn and Fox",Pune,Open,cybersecurity sql microservices,False,Senior,Medium,Good
+P354,E465,0.4980147540382793,3,AI Research,10.4,Mumbai,"Carpenter, Vaughn and Fox",Pune,Open,cybersecurity sql microservices,False,Senior,Medium,Good
+P354,E333,0.4969883429475075,4,DevOps,9.3,Mumbai,"Carpenter, Vaughn and Fox",Pune,Open,cybersecurity sql microservices,False,Senior,Medium,Good
+P354,E1057,0.476279309477512,5,AI Research,4.0,Mumbai,"Carpenter, Vaughn and Fox",Pune,Open,cybersecurity sql microservices,False,Mid-Level,Medium,Good
+P372,E522,0.5758058104844699,1,Data Science,5.3,Mumbai,West-Hamilton,Delhi,Open,network security big data cybersecurity,False,Mid-Level,Medium,Good
+P372,E716,0.5522397102617352,2,Cloud Engineering,12.2,Pune,West-Hamilton,Delhi,Open,network security big data cybersecurity,False,Expert,Medium,Good
+P372,E1073,0.5208621765585908,3,AI Research,6.1,Delhi,West-Hamilton,Delhi,Open,network security big data cybersecurity,True,Mid-Level,Medium,Good
+P372,E687,0.5195661265519003,4,Cloud Engineering,4.4,Delhi,West-Hamilton,Delhi,Open,network security big data cybersecurity,True,Mid-Level,Medium,Good
+P372,E338,0.5182981284061237,5,AI Research,13.7,Delhi,West-Hamilton,Delhi,Open,network security big data cybersecurity,True,Expert,Medium,Good
+P330,E423,0.7745442624298816,1,Software Development,10.1,Mumbai,Hughes-Church,Pune,Open,data lake implementation cybersecurity graphql api development,False,Senior,High,Good
+P330,E1000,0.7573574027968326,2,Software Development,13.5,Chennai,Hughes-Church,Pune,Open,data lake implementation cybersecurity graphql api development,False,Expert,High,Good
+P330,E577,0.75728236682383,3,Data Science,9.2,Mumbai,Hughes-Church,Pune,Open,data lake implementation cybersecurity graphql api development,False,Senior,High,Good
+P330,E1032,0.7033462916164501,4,AI Research,12.3,Delhi,Hughes-Church,Pune,Open,data lake implementation cybersecurity graphql api development,False,Expert,High,Good
+P330,E638,0.6408618093951082,5,Software Development,4.1,Pune,Hughes-Church,Pune,Open,data lake implementation cybersecurity graphql api development,True,Mid-Level,High,Strong
+P337,E413,0.7158684061567507,1,Cybersecurity,14.7,Pune,Carlson-Anderson,Delhi,Closed,microservices sql machine learning,False,Expert,High,Good
+P337,E906,0.5867907615986306,2,AI Research,4.3,Delhi,Carlson-Anderson,Delhi,Closed,microservices sql machine learning,True,Mid-Level,Medium,Good
+P337,E561,0.573461645852735,3,Data Science,5.0,Delhi,Carlson-Anderson,Delhi,Closed,microservices sql machine learning,True,Mid-Level,Medium,Good
+P337,E1050,0.546641388780684,4,AI Research,8.5,Chennai,Carlson-Anderson,Delhi,Closed,microservices sql machine learning,False,Senior,Medium,Good
+P337,E610,0.5464209410813028,5,Software Development,6.8,Pune,Carlson-Anderson,Delhi,Closed,microservices sql machine learning,False,Mid-Level,Medium,Good
+P397,E1083,0.5703808709220611,1,DevOps,3.4,Chennai,Bradford-West,Chennai,Closed,nlp iot cloud security,True,Mid-Level,Medium,Good
+P397,E1038,0.569474161111993,2,Cybersecurity,3.2,Mumbai,Bradford-West,Chennai,Closed,nlp iot cloud security,False,Mid-Level,Medium,Good
+P397,E143,0.560554073954063,3,Software Development,11.7,Pune,Bradford-West,Chennai,Closed,nlp iot cloud security,False,Senior,Medium,Good
+P397,E981,0.5379096787464517,4,Cloud Engineering,6.6,Chennai,Bradford-West,Chennai,Closed,nlp iot cloud security,True,Mid-Level,Medium,Good
+P397,E973,0.5258386979750634,5,Cloud Engineering,8.7,Pune,Bradford-West,Chennai,Closed,nlp iot cloud security,False,Senior,Medium,Good
+P357,E986,0.7621467756730167,1,Cloud Engineering,9.7,Chennai,Owens PLC,Chennai,Closed,data quality management data privacy compliance data visualization,True,Senior,High,Strong
+P357,E155,0.7200069850646355,2,Cloud Engineering,5.8,Delhi,Owens PLC,Chennai,Closed,data quality management data privacy compliance data visualization,False,Mid-Level,High,Good
+P357,E270,0.6321102291615568,3,DevOps,14.7,Delhi,Owens PLC,Chennai,Closed,data quality management data privacy compliance data visualization,False,Expert,High,Good
+P357,E704,0.6214631411630356,4,AI Research,4.0,Mumbai,Owens PLC,Chennai,Closed,data quality management data privacy compliance data visualization,False,Mid-Level,High,Good
+P357,E1015,0.606836800302011,5,Cybersecurity,6.6,Delhi,Owens PLC,Chennai,Closed,data quality management data privacy compliance data visualization,False,Mid-Level,High,Good
+P379,E809,0.5402959917431053,1,AI Research,11.5,Mumbai,"Johnson, Jefferson and Sanchez",Pune,Open,java mobile development incident response,False,Senior,Medium,Good
+P379,E394,0.4986051122461955,2,Cybersecurity,7.6,Delhi,"Johnson, Jefferson and Sanchez",Pune,Open,java mobile development incident response,False,Senior,Medium,Good
+P379,E164,0.48203392491732866,3,Software Development,6.9,Pune,"Johnson, Jefferson and Sanchez",Pune,Open,java mobile development incident response,True,Mid-Level,Medium,Good
+P379,E314,0.47949609786719327,4,AI Research,14.3,Delhi,"Johnson, Jefferson and Sanchez",Pune,Open,java mobile development incident response,False,Expert,Medium,Good
+P379,E763,0.47626896722472556,5,Data Science,5.6,Delhi,"Johnson, Jefferson and Sanchez",Pune,Open,java mobile development incident response,False,Mid-Level,Medium,Good
+P329,E334,0.6270609520818539,1,Cloud Engineering,11.6,Chennai,"Bowman, Sanchez and Lowe",Pune,Open,net scrum methodology serverless architecture,False,Senior,High,Good
+P329,E350,0.5677384358226316,2,Data Science,13.7,Mumbai,"Bowman, Sanchez and Lowe",Pune,Open,net scrum methodology serverless architecture,False,Expert,Medium,Good
+P329,E791,0.48435904614088754,3,Cloud Engineering,6.7,Chennai,"Bowman, Sanchez and Lowe",Pune,Open,net scrum methodology serverless architecture,False,Mid-Level,Medium,Good
+P329,E328,0.4565541135977744,4,Data Science,8.8,Pune,"Bowman, Sanchez and Lowe",Pune,Open,net scrum methodology serverless architecture,True,Senior,Medium,Good
+P329,E399,0.4470457834846235,5,Software Development,13.7,Delhi,"Bowman, Sanchez and Lowe",Pune,Open,net scrum methodology serverless architecture,False,Expert,Medium,Good
+P398,E421,0.6271479650550942,1,AI Research,10.1,Pune,"Howell, Herrera and Torres",Mumbai,Open,devops practices iot jenkins,False,Senior,High,Good
+P398,E549,0.5686056415034215,2,AI Research,9.5,Chennai,"Howell, Herrera and Torres",Mumbai,Open,devops practices iot jenkins,False,Senior,Medium,Good
+P398,E261,0.536403024479805,3,Cloud Engineering,10.5,Delhi,"Howell, Herrera and Torres",Mumbai,Open,devops practices iot jenkins,False,Senior,Medium,Good
+P398,E189,0.5164226944318293,4,DevOps,4.1,Pune,"Howell, Herrera and Torres",Mumbai,Open,devops practices iot jenkins,False,Mid-Level,Medium,Good
+P398,E495,0.4627145747803767,5,Data Science,11.3,Pune,"Howell, Herrera and Torres",Mumbai,Open,devops practices iot jenkins,False,Senior,Medium,Good
+P376,E292,0.6791702534534074,1,Cybersecurity,9.9,Mumbai,"Lee, Wilkerson and Mendoza",Delhi,Closed,data governance node js python,False,Senior,High,Good
+P376,E491,0.5086144844152092,2,Cloud Engineering,9.8,Mumbai,"Lee, Wilkerson and Mendoza",Delhi,Closed,data governance node js python,False,Senior,Medium,Good
+P376,E391,0.4646187978751951,3,Software Development,11.7,Mumbai,"Lee, Wilkerson and Mendoza",Delhi,Closed,data governance node js python,False,Senior,Medium,Good
+P376,E536,0.41579526461711036,4,Cloud Engineering,10.4,Mumbai,"Lee, Wilkerson and Mendoza",Delhi,Closed,data governance node js python,False,Senior,Medium,Good
+P376,E766,0.3811532360823541,5,Cloud Engineering,9.3,Mumbai,"Lee, Wilkerson and Mendoza",Delhi,Closed,data governance node js python,False,Senior,Medium,Fair
+P380,E1083,0.5117966579697582,1,DevOps,3.4,Chennai,"Parker, Arias and Payne",Pune,Open,node js cloud security iot,False,Mid-Level,Medium,Good
+P380,E780,0.4062916326636721,2,Cybersecurity,8.4,Chennai,"Parker, Arias and Payne",Pune,Open,node js cloud security iot,False,Senior,Medium,Good
+P380,E1041,0.3842590622442082,3,Data Science,6.7,Pune,"Parker, Arias and Payne",Pune,Open,node js cloud security iot,True,Mid-Level,Medium,Fair
+P380,E452,0.37279604921330645,4,Data Science,12.6,Delhi,"Parker, Arias and Payne",Pune,Open,node js cloud security iot,False,Expert,Medium,Fair
+P380,E641,0.35875205269940347,5,Cloud Engineering,4.1,Mumbai,"Parker, Arias and Payne",Pune,Open,node js cloud security iot,False,Mid-Level,Medium,Fair
+P363,E842,0.7151227678809873,1,Software Development,3.3,Delhi,"Banks, Johnson and Branch",Mumbai,Open,graphql incident response rest apis,False,Mid-Level,High,Good
+P363,E138,0.5788750510913806,2,Data Science,7.4,Chennai,"Banks, Johnson and Branch",Mumbai,Open,graphql incident response rest apis,False,Senior,Medium,Good
+P363,E195,0.5575473597535976,3,Cloud Engineering,4.6,Pune,"Banks, Johnson and Branch",Mumbai,Open,graphql incident response rest apis,False,Mid-Level,Medium,Good
+P363,E499,0.5476696877056647,4,Cybersecurity,6.5,Chennai,"Banks, Johnson and Branch",Mumbai,Open,graphql incident response rest apis,False,Mid-Level,Medium,Good
+P363,E933,0.5132038909201814,5,Software Development,10.5,Chennai,"Banks, Johnson and Branch",Mumbai,Open,graphql incident response rest apis,False,Senior,Medium,Good
+P343,E217,0.640991028299089,1,Cloud Engineering,5.4,Chennai,Adams Inc,Delhi,Open,business intelligence node js ci/cd pipelines,False,Mid-Level,High,Good
+P343,E460,0.6048579356128443,2,Cybersecurity,9.9,Mumbai,Adams Inc,Delhi,Open,business intelligence node js ci/cd pipelines,False,Senior,High,Good
+P343,E496,0.5224311080070296,3,DevOps,14.5,Pune,Adams Inc,Delhi,Open,business intelligence node js ci/cd pipelines,False,Expert,Medium,Good
+P343,E416,0.5062263618605725,4,AI Research,9.9,Mumbai,Adams Inc,Delhi,Open,business intelligence node js ci/cd pipelines,False,Senior,Medium,Good
+P343,E307,0.4704905883884323,5,Cloud Engineering,10.0,Mumbai,Adams Inc,Delhi,Open,business intelligence node js ci/cd pipelines,False,Senior,Medium,Good
+P386,E307,0.550813571135915,1,Cloud Engineering,10.0,Mumbai,Roberts Inc,Chennai,Open,ci/cd docker data warehousing,False,Senior,Medium,Good
+P386,E545,0.5047253415499603,2,Cloud Engineering,3.3,Chennai,Roberts Inc,Chennai,Open,ci/cd docker data warehousing,True,Mid-Level,Medium,Good
+P386,E1043,0.4611778238401693,3,Cybersecurity,10.3,Pune,Roberts Inc,Chennai,Open,ci/cd docker data warehousing,False,Senior,Medium,Good
+P386,E564,0.46029250726461585,4,Cybersecurity,3.4,Mumbai,Roberts Inc,Chennai,Open,ci/cd docker data warehousing,False,Mid-Level,Medium,Good
+P386,E207,0.44555594078930855,5,Software Development,7.5,Chennai,Roberts Inc,Chennai,Open,ci/cd docker data warehousing,True,Senior,Medium,Good
+P385,E663,0.6717147923867219,1,Software Development,12.1,Pune,Bailey-Valdez,Delhi,Open,robotic process automation machine learning ci/cd pipelines,False,Expert,High,Good
+P385,E592,0.6219955617257744,2,Cybersecurity,14.1,Chennai,Bailey-Valdez,Delhi,Open,robotic process automation machine learning ci/cd pipelines,False,Expert,High,Good
+P385,E873,0.621660286342912,3,Cybersecurity,10.7,Delhi,Bailey-Valdez,Delhi,Open,robotic process automation machine learning ci/cd pipelines,True,Senior,High,Strong
+P385,E729,0.6138630834125052,4,AI Research,13.8,Delhi,Bailey-Valdez,Delhi,Open,robotic process automation machine learning ci/cd pipelines,True,Expert,High,Strong
+P385,E927,0.5207026093991581,5,DevOps,8.6,Pune,Bailey-Valdez,Delhi,Open,robotic process automation machine learning ci/cd pipelines,False,Senior,Medium,Good
+P332,E686,0.684565181396488,1,AI Research,13.4,Delhi,Hunter-Harding,Mumbai,Open,agile iot big data,False,Expert,High,Good
+P332,E372,0.4231980616790503,2,DevOps,3.5,Chennai,Hunter-Harding,Mumbai,Open,agile iot big data,False,Mid-Level,Medium,Good
+P332,E443,0.419095838190629,3,Software Development,7.6,Pune,Hunter-Harding,Mumbai,Open,agile iot big data,False,Senior,Medium,Good
+P332,E768,0.4177982511536983,4,AI Research,5.2,Mumbai,Hunter-Harding,Mumbai,Open,agile iot big data,True,Mid-Level,Medium,Good
+P332,E281,0.39475583818273874,5,Cloud Engineering,13.3,Delhi,Hunter-Harding,Mumbai,Open,agile iot big data,False,Expert,Medium,Fair
+P361,E306,0.6381716197143811,1,Cloud Engineering,9.3,Mumbai,Alexander-Mann,Chennai,Open,ci/cd pipelines quantum computing network security,False,Senior,High,Good
+P361,E194,0.6352991187319879,2,Software Development,4.4,Pune,Alexander-Mann,Chennai,Open,ci/cd pipelines quantum computing network security,False,Mid-Level,High,Good
+P361,E695,0.5673449436395269,3,AI Research,4.7,Mumbai,Alexander-Mann,Chennai,Open,ci/cd pipelines quantum computing network security,False,Mid-Level,Medium,Good
+P361,E158,0.4778728701951988,4,Cloud Engineering,4.1,Delhi,Alexander-Mann,Chennai,Open,ci/cd pipelines quantum computing network security,False,Mid-Level,Medium,Good
+P361,E185,0.4213368160415969,5,Cybersecurity,10.9,Chennai,Alexander-Mann,Chennai,Open,ci/cd pipelines quantum computing network security,True,Senior,Medium,Good
+P333,E686,0.6510853503953095,1,AI Research,13.4,Delhi,Robinson-Martin,Delhi,Open,iot big data microservices,True,Expert,High,Strong
+P333,E236,0.6127437797513345,2,DevOps,10.7,Pune,Robinson-Martin,Delhi,Open,iot big data microservices,False,Senior,High,Good
+P333,E1075,0.5871461915134437,3,DevOps,5.9,Delhi,Robinson-Martin,Delhi,Open,iot big data microservices,True,Mid-Level,Medium,Good
+P333,E588,0.5571954016082157,4,DevOps,9.5,Pune,Robinson-Martin,Delhi,Open,iot big data microservices,False,Senior,Medium,Good
+P333,E494,0.5145549652656356,5,DevOps,4.0,Pune,Robinson-Martin,Delhi,Open,iot big data microservices,False,Mid-Level,Medium,Good
+P375,E1056,0.6464021202077236,1,Data Science,12.3,Pune,"Clarke, Smith and Snyder",Chennai,Closed,api development cloud security data mesh architecture,False,Expert,High,Good
+P375,E356,0.6028404698828564,2,DevOps,12.4,Pune,"Clarke, Smith and Snyder",Chennai,Closed,api development cloud security data mesh architecture,False,Expert,High,Good
+P375,E647,0.6022125103523617,3,Software Development,7.8,Mumbai,"Clarke, Smith and Snyder",Chennai,Closed,api development cloud security data mesh architecture,False,Senior,High,Good
+P375,E657,0.5608349550956331,4,Software Development,9.8,Pune,"Clarke, Smith and Snyder",Chennai,Closed,api development cloud security data mesh architecture,False,Senior,Medium,Good
+P375,E563,0.5412578840127744,5,AI Research,11.6,Mumbai,"Clarke, Smith and Snyder",Chennai,Closed,api development cloud security data mesh architecture,False,Senior,Medium,Good
+P390,E511,0.6848379645468294,1,Cybersecurity,8.7,Chennai,Trujillo Inc,Mumbai,Closed,blockchain real-time data processing network security,False,Senior,High,Good
+P390,E478,0.6448836773085624,2,Data Science,9.8,Mumbai,Trujillo Inc,Mumbai,Closed,blockchain real-time data processing network security,True,Senior,High,Strong
+P390,E966,0.6402237588640618,3,DevOps,14.8,Delhi,Trujillo Inc,Mumbai,Closed,blockchain real-time data processing network security,False,Expert,High,Good
+P390,E359,0.6382202863214049,4,DevOps,4.1,Mumbai,Trujillo Inc,Mumbai,Closed,blockchain real-time data processing network security,True,Mid-Level,High,Strong
+P390,E343,0.575945788711305,5,Software Development,5.8,Pune,Trujillo Inc,Mumbai,Closed,blockchain real-time data processing network security,False,Mid-Level,Medium,Good
+P325,E596,0.6728361484162886,1,Software Development,8.2,Chennai,Ortega Group,Delhi,Open,aws kubernetes container orchestration,False,Senior,High,Good
+P325,E654,0.6720607111131878,2,DevOps,11.7,Mumbai,Ortega Group,Delhi,Open,aws kubernetes container orchestration,False,Senior,High,Good
+P325,E349,0.6392504271679968,3,DevOps,3.1,Pune,Ortega Group,Delhi,Open,aws kubernetes container orchestration,False,Mid-Level,High,Good
+P325,E756,0.6097848574296263,4,DevOps,10.7,Chennai,Ortega Group,Delhi,Open,aws kubernetes container orchestration,False,Senior,High,Good
+P325,E581,0.5349797453266008,5,AI Research,3.0,Pune,Ortega Group,Delhi,Open,aws kubernetes container orchestration,False,Mid-Level,Medium,Good
+P400,E692,0.6972869399525589,1,AI Research,13.3,Mumbai,"Reed, Shannon and Chen",Pune,Open,api development ci/cd pipelines ci/cd,False,Expert,High,Good
+P400,E833,0.6260775126156238,2,Data Science,9.6,Pune,"Reed, Shannon and Chen",Pune,Open,api development ci/cd pipelines ci/cd,True,Senior,High,Strong
+P400,E219,0.6197063618160814,3,Data Science,6.9,Chennai,"Reed, Shannon and Chen",Pune,Open,api development ci/cd pipelines ci/cd,False,Mid-Level,High,Good
+P400,E940,0.5848626272113923,4,Data Science,8.1,Chennai,"Reed, Shannon and Chen",Pune,Open,api development ci/cd pipelines ci/cd,False,Senior,Medium,Good
+P400,E275,0.5712343406975027,5,Data Science,10.7,Mumbai,"Reed, Shannon and Chen",Pune,Open,api development ci/cd pipelines ci/cd,False,Senior,Medium,Good
+P371,E536,0.658600375649076,1,Cloud Engineering,10.4,Mumbai,"Smith, Reid and Hernandez",Mumbai,Open,healthcare analytics data governance agile,True,Senior,High,Strong
+P371,E227,0.5476339837817323,2,Data Science,14.7,Chennai,"Smith, Reid and Hernandez",Mumbai,Open,healthcare analytics data governance agile,False,Expert,Medium,Good
+P371,E699,0.5244184544223109,3,Data Science,13.6,Mumbai,"Smith, Reid and Hernandez",Mumbai,Open,healthcare analytics data governance agile,True,Expert,Medium,Good
+P371,E585,0.5046262215488848,4,Software Development,6.0,Pune,"Smith, Reid and Hernandez",Mumbai,Open,healthcare analytics data governance agile,False,Mid-Level,Medium,Good
+P371,E822,0.4920002131038597,5,Cybersecurity,14.0,Chennai,"Smith, Reid and Hernandez",Mumbai,Open,healthcare analytics data governance agile,False,Expert,Medium,Good
+P310,E878,0.7307392229106562,1,AI Research,9.6,Mumbai,Dawson and Sons,Mumbai,Closed,data engineering edge computing container orchestration,True,Senior,High,Strong
+P310,E609,0.6199392003076674,2,Cloud Engineering,10.5,Pune,Dawson and Sons,Mumbai,Closed,data engineering edge computing container orchestration,False,Senior,High,Good
+P310,E569,0.580851899501795,3,Cloud Engineering,5.5,Pune,Dawson and Sons,Mumbai,Closed,data engineering edge computing container orchestration,False,Mid-Level,Medium,Good
+P310,E613,0.5618097934040869,4,DevOps,12.3,Pune,Dawson and Sons,Mumbai,Closed,data engineering edge computing container orchestration,False,Expert,Medium,Good
+P310,E1048,0.4610044692276196,5,Cybersecurity,5.8,Mumbai,Dawson and Sons,Mumbai,Closed,data engineering edge computing container orchestration,True,Mid-Level,Medium,Good
+P353,E763,0.6089654486833782,1,Data Science,5.6,Delhi,Lewis Group,Delhi,Closed,mobile development microservices nosql,True,Mid-Level,High,Strong
+P353,E963,0.5837672778844673,2,Cybersecurity,11.5,Pune,Lewis Group,Delhi,Closed,mobile development microservices nosql,False,Senior,Medium,Good
+P353,E1040,0.5728413367335361,3,Cybersecurity,7.0,Mumbai,Lewis Group,Delhi,Closed,mobile development microservices nosql,False,Senior,Medium,Good
+P353,E385,0.5699255595311131,4,DevOps,13.2,Delhi,Lewis Group,Delhi,Closed,mobile development microservices nosql,True,Expert,Medium,Good
+P353,E669,0.5456772186359289,5,AI Research,13.5,Chennai,Lewis Group,Delhi,Closed,mobile development microservices nosql,False,Expert,Medium,Good
+P395,E942,0.5708206198370598,1,Cybersecurity,13.5,Delhi,Davidson-Davis,Chennai,Open,agile project management ci/cd robotic process automation,False,Expert,Medium,Good
+P395,E438,0.5667366161731832,2,DevOps,9.1,Chennai,Davidson-Davis,Chennai,Open,agile project management ci/cd robotic process automation,True,Senior,Medium,Good
+P395,E927,0.5584707982975571,3,DevOps,8.6,Pune,Davidson-Davis,Chennai,Open,agile project management ci/cd robotic process automation,False,Senior,Medium,Good
+P395,E605,0.5325461459211607,4,Data Science,8.9,Mumbai,Davidson-Davis,Chennai,Open,agile project management ci/cd robotic process automation,False,Senior,Medium,Good
+P395,E663,0.5232215066498048,5,Software Development,12.1,Pune,Davidson-Davis,Chennai,Open,agile project management ci/cd robotic process automation,False,Expert,Medium,Good
+P388,E864,0.5084604232534862,1,Cybersecurity,4.9,Chennai,"Wright, Faulkner and Burke",Mumbai,Open,healthcare analytics scrum agile project management,False,Mid-Level,Medium,Good
+P388,E201,0.4999351176865986,2,Data Science,13.4,Pune,"Wright, Faulkner and Burke",Mumbai,Open,healthcare analytics scrum agile project management,False,Expert,Medium,Good
+P388,E248,0.46857504676281614,3,Cybersecurity,9.9,Mumbai,"Wright, Faulkner and Burke",Mumbai,Open,healthcare analytics scrum agile project management,True,Senior,Medium,Good
+P388,E585,0.4578921480203916,4,Software Development,6.0,Pune,"Wright, Faulkner and Burke",Mumbai,Open,healthcare analytics scrum agile project management,False,Mid-Level,Medium,Good
+P388,E462,0.40239756702425106,5,AI Research,3.9,Mumbai,"Wright, Faulkner and Burke",Mumbai,Open,healthcare analytics scrum agile project management,True,Mid-Level,Medium,Good
+P338,E1052,0.4787897380786605,1,Cybersecurity,5.9,Delhi,"Petty, Duran and Duncan",Delhi,Open,docker kubernetes aws,True,Mid-Level,Medium,Good
+P338,E839,0.4500380497963866,2,Data Science,7.0,Chennai,"Petty, Duran and Duncan",Delhi,Open,docker kubernetes aws,False,Senior,Medium,Good
+P338,E949,0.41955376018665913,3,Software Development,13.7,Delhi,"Petty, Duran and Duncan",Delhi,Open,docker kubernetes aws,True,Expert,Medium,Good
+P338,E207,0.40860039283823796,4,Software Development,7.5,Chennai,"Petty, Duran and Duncan",Delhi,Open,docker kubernetes aws,False,Senior,Medium,Good
+P338,E513,0.3993588684480421,5,Cybersecurity,14.7,Mumbai,"Petty, Duran and Duncan",Delhi,Open,docker kubernetes aws,False,Expert,Medium,Fair
+P321,E846,0.6025985513138101,1,AI Research,5.7,Delhi,Taylor Ltd,Delhi,Open,data visualization quantum computing nlp,True,Mid-Level,High,Strong
+P321,E684,0.5617784275095447,2,Software Development,10.0,Delhi,Taylor Ltd,Delhi,Open,data visualization quantum computing nlp,True,Senior,Medium,Good
+P321,E1048,0.5521683053830666,3,Cybersecurity,5.8,Mumbai,Taylor Ltd,Delhi,Open,data visualization quantum computing nlp,False,Mid-Level,Medium,Good
+P321,E607,0.5485126652572467,4,AI Research,14.7,Pune,Taylor Ltd,Delhi,Open,data visualization quantum computing nlp,False,Expert,Medium,Good
+P321,E1035,0.5249474371714893,5,Software Development,12.2,Mumbai,Taylor Ltd,Delhi,Open,data visualization quantum computing nlp,False,Expert,Medium,Good
+P308,E631,0.7663578566591254,1,AI Research,13.8,Chennai,Mathis Group,Chennai,Open,network security sql database management big data,True,Expert,High,Strong
+P308,E242,0.7332076074954743,2,Software Development,5.3,Chennai,Mathis Group,Chennai,Open,network security sql database management big data,True,Mid-Level,High,Strong
+P308,E298,0.7168536677831592,3,Data Science,13.7,Chennai,Mathis Group,Chennai,Open,network security sql database management big data,True,Expert,High,Strong
+P308,E178,0.6536257847687702,4,Software Development,4.8,Pune,Mathis Group,Chennai,Open,network security sql database management big data,False,Mid-Level,High,Good
+P308,E510,0.6250715438040778,5,AI Research,4.1,Mumbai,Mathis Group,Chennai,Open,network security sql database management big data,False,Mid-Level,High,Good
+P339,E759,0.8742077038077287,1,Software Development,4.5,Mumbai,"Wheeler, Lewis and Nash",Pune,Closed,microservices graphql api development nosql database management,False,Mid-Level,Excellent,Good
+P339,E682,0.6769777793172898,2,Software Development,4.0,Mumbai,"Wheeler, Lewis and Nash",Pune,Closed,microservices graphql api development nosql database management,False,Mid-Level,High,Good
+P339,E562,0.6488651450331153,3,Cybersecurity,11.8,Chennai,"Wheeler, Lewis and Nash",Pune,Closed,microservices graphql api development nosql database management,False,Senior,High,Good
+P339,E176,0.6485320680463149,4,Data Science,12.9,Mumbai,"Wheeler, Lewis and Nash",Pune,Closed,microservices graphql api development nosql database management,False,Expert,High,Good
+P339,E689,0.6109405241021193,5,Cybersecurity,13.4,Pune,"Wheeler, Lewis and Nash",Pune,Closed,microservices graphql api development nosql database management,True,Expert,High,Strong
+P396,E254,0.5914300171493785,1,AI Research,8.4,Mumbai,"Cardenas, Palmer and Price",Chennai,Closed,microservices architecture agile python,False,Senior,Medium,Good
+P396,E718,0.5576246559558997,2,Software Development,14.1,Delhi,"Cardenas, Palmer and Price",Chennai,Closed,microservices architecture agile python,False,Expert,Medium,Good
+P396,E148,0.5576246559558997,3,DevOps,11.2,Mumbai,"Cardenas, Palmer and Price",Chennai,Closed,microservices architecture agile python,False,Senior,Medium,Good
+P396,E114,0.5521475464349307,4,DevOps,6.4,Pune,"Cardenas, Palmer and Price",Chennai,Closed,microservices architecture agile python,False,Mid-Level,Medium,Good
+P396,E469,0.5516114559849198,5,Software Development,9.5,Pune,"Cardenas, Palmer and Price",Chennai,Closed,microservices architecture agile python,False,Senior,Medium,Good
+P366,E1060,0.6700568728697014,1,Cloud Engineering,7.8,Delhi,Jones Group,Pune,Closed,net big data data governance,False,Senior,High,Good
+P366,E226,0.519989991148301,2,Data Science,4.8,Mumbai,Jones Group,Pune,Closed,net big data data governance,False,Mid-Level,Medium,Good
+P366,E223,0.5143557194326347,3,Cybersecurity,10.7,Mumbai,Jones Group,Pune,Closed,net big data data governance,False,Senior,Medium,Good
+P366,E632,0.4950916176259273,4,Cybersecurity,3.3,Delhi,Jones Group,Pune,Closed,net big data data governance,False,Mid-Level,Medium,Good
+P366,E536,0.4788151378703247,5,Cloud Engineering,10.4,Mumbai,Jones Group,Pune,Closed,net big data data governance,False,Senior,Medium,Good
+P302,E735,0.5944448113706053,1,Software Development,5.9,Chennai,"Cunningham, Anderson and Fernandez",Pune,Open,cloud security container orchestration python,False,Mid-Level,Medium,Good
+P302,E548,0.5914049168299568,2,Cloud Engineering,3.3,Pune,"Cunningham, Anderson and Fernandez",Pune,Open,cloud security container orchestration python,True,Mid-Level,Medium,Good
+P302,E1038,0.5231801165489508,3,Cybersecurity,3.2,Mumbai,"Cunningham, Anderson and Fernandez",Pune,Open,cloud security container orchestration python,False,Mid-Level,Medium,Good
+P302,E123,0.5222813319532457,4,AI Research,13.1,Delhi,"Cunningham, Anderson and Fernandez",Pune,Open,cloud security container orchestration python,False,Expert,Medium,Good
+P302,E251,0.5060539418214732,5,DevOps,9.8,Pune,"Cunningham, Anderson and Fernandez",Pune,Open,cloud security container orchestration python,True,Senior,Medium,Good
+P365,E313,0.6913179993292994,1,AI Research,14.5,Mumbai,"Hill, Adams and May",Delhi,Open,network security quantum computing nosql database management,False,Expert,High,Good
+P365,E510,0.6649547982621635,2,AI Research,4.1,Mumbai,"Hill, Adams and May",Delhi,Open,network security quantum computing nosql database management,False,Mid-Level,High,Good
+P365,E684,0.6595979054960713,3,Software Development,10.0,Delhi,"Hill, Adams and May",Delhi,Open,network security quantum computing nosql database management,True,Senior,High,Strong
+P365,E511,0.6314534299194908,4,Cybersecurity,8.7,Chennai,"Hill, Adams and May",Delhi,Open,network security quantum computing nosql database management,False,Senior,High,Good
+P365,E739,0.6203006732133715,5,Cloud Engineering,13.4,Pune,"Hill, Adams and May",Delhi,Open,network security quantum computing nosql database management,False,Expert,High,Good
+P322,E198,0.6572943240528086,1,DevOps,12.2,Chennai,"Newton, Goodwin and Sims",Mumbai,Open,data engineering cybersecurity python,False,Expert,High,Good
+P322,E844,0.651784086037219,2,DevOps,7.3,Delhi,"Newton, Goodwin and Sims",Mumbai,Open,data engineering cybersecurity python,False,Senior,High,Good
+P322,E999,0.6295940404414472,3,Data Science,10.1,Mumbai,"Newton, Goodwin and Sims",Mumbai,Open,data engineering cybersecurity python,True,Senior,High,Strong
+P322,E240,0.5361658158613675,4,Data Science,12.8,Pune,"Newton, Goodwin and Sims",Mumbai,Open,data engineering cybersecurity python,False,Expert,Medium,Good
+P322,E708,0.4900528438812477,5,Cybersecurity,13.3,Pune,"Newton, Goodwin and Sims",Mumbai,Open,data engineering cybersecurity python,False,Expert,Medium,Good
+P368,E431,0.6624505369583217,1,Cloud Engineering,12.4,Mumbai,Herrera LLC,Mumbai,Open,node js quantum computing kubernetes,True,Expert,High,Strong
+P368,E958,0.6319784550496825,2,Cybersecurity,3.5,Pune,Herrera LLC,Mumbai,Open,node js quantum computing kubernetes,False,Mid-Level,High,Good
+P368,E781,0.6074436688545118,3,Data Science,13.8,Chennai,Herrera LLC,Mumbai,Open,node js quantum computing kubernetes,False,Expert,High,Good
+P368,E519,0.4566468552372055,4,Software Development,10.7,Pune,Herrera LLC,Mumbai,Open,node js quantum computing kubernetes,False,Senior,Medium,Good
+P368,E210,0.39660208324768226,5,AI Research,10.7,Delhi,Herrera LLC,Mumbai,Open,node js quantum computing kubernetes,False,Senior,Medium,Fair
+P346,E774,0.5184934289341633,1,DevOps,4.7,Mumbai,"Yu, Doyle and Davidson",Pune,Closed,sql azure data warehousing,False,Mid-Level,Medium,Good
+P346,E850,0.515664061745889,2,Data Science,14.2,Pune,"Yu, Doyle and Davidson",Pune,Closed,sql azure data warehousing,True,Expert,Medium,Good
+P346,E459,0.5057146282390546,3,Cybersecurity,13.2,Mumbai,"Yu, Doyle and Davidson",Pune,Closed,sql azure data warehousing,False,Expert,Medium,Good
+P346,E608,0.5013200242458398,4,AI Research,5.4,Pune,"Yu, Doyle and Davidson",Pune,Closed,sql azure data warehousing,True,Mid-Level,Medium,Good
+P346,E1073,0.4771091722171923,5,AI Research,6.1,Delhi,"Yu, Doyle and Davidson",Pune,Closed,sql azure data warehousing,False,Mid-Level,Medium,Good
+P303,E164,0.6690145852234239,1,Software Development,6.9,Pune,"Mata, Mclean and Jones",Mumbai,Closed,react mobile development microservices architecture,False,Mid-Level,High,Good
+P303,E175,0.5824720396552089,2,AI Research,9.1,Delhi,"Mata, Mclean and Jones",Mumbai,Closed,react mobile development microservices architecture,False,Senior,Medium,Good
+P303,E148,0.49405094096144786,3,DevOps,11.2,Mumbai,"Mata, Mclean and Jones",Mumbai,Closed,react mobile development microservices architecture,True,Senior,Medium,Good
+P303,E718,0.49405094096144786,4,Software Development,14.1,Delhi,"Mata, Mclean and Jones",Mumbai,Closed,react mobile development microservices architecture,False,Expert,Medium,Good
+P303,E114,0.4893199232687969,5,DevOps,6.4,Pune,"Mata, Mclean and Jones",Mumbai,Closed,react mobile development microservices architecture,False,Mid-Level,Medium,Good
+P334,E1005,0.6479687115678816,1,Cybersecurity,8.4,Mumbai,Mcdaniel-Ochoa,Delhi,Open,graphql quantum computing nlp,False,Senior,High,Good
+P334,E607,0.5882702274346143,2,AI Research,14.7,Pune,Mcdaniel-Ochoa,Delhi,Open,graphql quantum computing nlp,False,Expert,Medium,Good
+P334,E519,0.5402326742023588,3,Software Development,10.7,Pune,Mcdaniel-Ochoa,Delhi,Open,graphql quantum computing nlp,False,Senior,Medium,Good
+P334,E958,0.5258755213836719,4,Cybersecurity,3.5,Pune,Mcdaniel-Ochoa,Delhi,Open,graphql quantum computing nlp,False,Mid-Level,Medium,Good
+P334,E603,0.5257936084654211,5,Data Science,3.7,Mumbai,Mcdaniel-Ochoa,Delhi,Open,graphql quantum computing nlp,False,Mid-Level,Medium,Good
+P305,E1046,0.6819508868398326,1,AI Research,13.1,Pune,Medina-Maldonado,Mumbai,Open,terraform sql database management nlp,False,Expert,High,Good
+P305,E172,0.598339930314922,2,Software Development,12.8,Mumbai,Medina-Maldonado,Mumbai,Open,terraform sql database management nlp,True,Expert,Medium,Good
+P305,E178,0.566689949147561,3,Software Development,4.8,Pune,Medina-Maldonado,Mumbai,Open,terraform sql database management nlp,False,Mid-Level,Medium,Good
+P305,E260,0.5597379865220518,4,DevOps,12.6,Pune,Medina-Maldonado,Mumbai,Open,terraform sql database management nlp,False,Expert,Medium,Good
+P305,E693,0.5391533688468514,5,DevOps,4.6,Delhi,Medina-Maldonado,Mumbai,Open,terraform sql database management nlp,False,Mid-Level,Medium,Good
+P349,E671,0.7423328489428377,1,Software Development,5.2,Pune,"Bailey, Martinez and Cox",Chennai,Closed,ci/cd robotic process automation graphql api development,False,Mid-Level,High,Good
+P349,E294,0.5787899925987237,2,DevOps,9.2,Delhi,"Bailey, Martinez and Cox",Chennai,Closed,ci/cd robotic process automation graphql api development,False,Senior,Medium,Good
+P349,E927,0.5752687564306834,3,DevOps,8.6,Pune,"Bailey, Martinez and Cox",Chennai,Closed,ci/cd robotic process automation graphql api development,False,Senior,Medium,Good
+P349,E829,0.5546231395161186,4,Cloud Engineering,7.0,Pune,"Bailey, Martinez and Cox",Chennai,Closed,ci/cd robotic process automation graphql api development,False,Senior,Medium,Good
+P349,E1033,0.5384899859728383,5,Cloud Engineering,3.7,Pune,"Bailey, Martinez and Cox",Chennai,Closed,ci/cd robotic process automation graphql api development,False,Mid-Level,Medium,Good
+P340,E385,0.6381685501022335,1,DevOps,13.2,Delhi,Gray LLC,Delhi,Closed,nosql net ci/cd pipelines,True,Expert,High,Strong
+P340,E807,0.6206811843258844,2,DevOps,4.6,Mumbai,Gray LLC,Delhi,Closed,nosql net ci/cd pipelines,False,Mid-Level,High,Good
+P340,E928,0.5309733352116237,3,Software Development,6.3,Delhi,Gray LLC,Delhi,Closed,nosql net ci/cd pipelines,True,Mid-Level,Medium,Good
+P340,E390,0.5166975958890904,4,Software Development,13.6,Mumbai,Gray LLC,Delhi,Closed,nosql net ci/cd pipelines,False,Expert,Medium,Good
+P340,E408,0.500675483654094,5,Software Development,4.7,Mumbai,Gray LLC,Delhi,Closed,nosql net ci/cd pipelines,False,Mid-Level,Medium,Good
+P391,E751,0.5621723300978176,1,Cybersecurity,10.9,Mumbai,"Lane, Woodward and Martinez",Mumbai,Open,aws data warehousing tensorflow,True,Senior,Medium,Good
+P391,E731,0.5602011128698883,2,Cybersecurity,7.3,Delhi,"Lane, Woodward and Martinez",Mumbai,Open,aws data warehousing tensorflow,False,Senior,Medium,Good
+P391,E662,0.5588099972632231,3,DevOps,14.3,Pune,"Lane, Woodward and Martinez",Mumbai,Open,aws data warehousing tensorflow,False,Expert,Medium,Good
+P391,E1043,0.4509554887434898,4,Cybersecurity,10.3,Pune,"Lane, Woodward and Martinez",Mumbai,Open,aws data warehousing tensorflow,False,Senior,Medium,Good
+P391,E564,0.4501515733178182,5,Cybersecurity,3.4,Mumbai,"Lane, Woodward and Martinez",Mumbai,Open,aws data warehousing tensorflow,True,Mid-Level,Medium,Good
+P345,E377,0.5789289403145927,1,DevOps,7.8,Delhi,Acosta Group,Chennai,Closed,ui/ux design graphql api development agile project management,False,Senior,Medium,Good
+P345,E802,0.53915083674939,2,Software Development,8.9,Mumbai,Acosta Group,Chennai,Closed,ui/ux design graphql api development agile project management,False,Senior,Medium,Good
+P345,E734,0.5241232964055091,3,DevOps,9.5,Chennai,Acosta Group,Chennai,Closed,ui/ux design graphql api development agile project management,True,Senior,Medium,Good
+P345,E345,0.5178929766519103,4,Cloud Engineering,13.4,Delhi,Acosta Group,Chennai,Closed,ui/ux design graphql api development agile project management,False,Expert,Medium,Good
+P345,E444,0.48771448619654223,5,DevOps,7.0,Mumbai,Acosta Group,Chennai,Closed,ui/ux design graphql api development agile project management,False,Senior,Medium,Good
+P318,E247,0.6674225460132762,1,DevOps,5.0,Pune,"Gonzalez, Dean and Wood",Pune,Closed,robotic process automation jenkins postgresql,True,Mid-Level,High,Strong
+P318,E241,0.6593418909616213,2,Cybersecurity,11.5,Delhi,"Gonzalez, Dean and Wood",Pune,Closed,robotic process automation jenkins postgresql,False,Senior,High,Good
+P318,E1023,0.6346032699033813,3,Cybersecurity,6.6,Mumbai,"Gonzalez, Dean and Wood",Pune,Closed,robotic process automation jenkins postgresql,False,Mid-Level,High,Good
+P318,E1100,0.566271056317529,4,Cybersecurity,9.8,Mumbai,"Gonzalez, Dean and Wood",Pune,Closed,robotic process automation jenkins postgresql,False,Senior,Medium,Good
+P318,E169,0.5563955737366832,5,Cybersecurity,9.2,Mumbai,"Gonzalez, Dean and Wood",Pune,Closed,robotic process automation jenkins postgresql,False,Senior,Medium,Good
+P393,E966,0.756340466757915,1,DevOps,14.8,Delhi,Sanchez PLC,Mumbai,Open,real-time data processing nlp terraform,False,Expert,High,Good
+P393,E359,0.7552635772400604,2,DevOps,4.1,Mumbai,Sanchez PLC,Mumbai,Open,real-time data processing nlp terraform,True,Mid-Level,High,Strong
+P393,E1012,0.7482751798829879,3,Software Development,9.6,Delhi,Sanchez PLC,Mumbai,Open,real-time data processing nlp terraform,False,Senior,High,Good
+P393,E1039,0.7070469384397823,4,Cybersecurity,9.5,Mumbai,Sanchez PLC,Mumbai,Open,real-time data processing nlp terraform,True,Senior,High,Strong
+P393,E594,0.6623739347160482,5,Software Development,13.9,Pune,Sanchez PLC,Mumbai,Open,real-time data processing nlp terraform,False,Expert,High,Good
+P360,E1070,0.6341938823102323,1,DevOps,11.2,Chennai,Meyers LLC,Pune,Open,python aws data quality management,False,Senior,High,Good
+P360,E921,0.5893789622498021,2,DevOps,3.3,Chennai,Meyers LLC,Pune,Open,python aws data quality management,False,Mid-Level,Medium,Good
+P360,E117,0.5783860795583956,3,AI Research,9.1,Pune,Meyers LLC,Pune,Open,python aws data quality management,True,Senior,Medium,Good
+P360,E330,0.4982409397956966,4,Cloud Engineering,13.3,Delhi,Meyers LLC,Pune,Open,python aws data quality management,False,Expert,Medium,Good
+P360,E968,0.49512063351300023,5,Data Science,13.7,Mumbai,Meyers LLC,Pune,Open,python aws data quality management,False,Expert,Medium,Good
+P394,E505,0.5552179865007036,1,DevOps,9.1,Chennai,Morris-Willis,Chennai,Open,jenkins data engineering mobile development,True,Senior,Medium,Good
+P394,E959,0.5543311274928856,2,Cybersecurity,7.0,Pune,Morris-Willis,Chennai,Open,jenkins data engineering mobile development,False,Senior,Medium,Good
+P394,E421,0.5243443621693858,3,AI Research,10.1,Pune,Morris-Willis,Chennai,Open,jenkins data engineering mobile development,False,Senior,Medium,Good
+P394,E451,0.4873352952793083,4,Software Development,13.3,Chennai,Morris-Willis,Chennai,Open,jenkins data engineering mobile development,True,Expert,Medium,Good
+P394,E995,0.48315355360534573,5,AI Research,7.6,Delhi,Morris-Willis,Chennai,Open,jenkins data engineering mobile development,False,Senior,Medium,Good
+P309,E376,0.6441334902967609,1,Software Development,5.4,Delhi,Todd-Rosales,Pune,Closed,scrum methodology blockchain java,False,Mid-Level,High,Good
+P309,E580,0.6241022601682683,2,Software Development,3.2,Mumbai,Todd-Rosales,Pune,Closed,scrum methodology blockchain java,False,Mid-Level,High,Good
+P309,E812,0.563471926057703,3,Data Science,4.7,Pune,Todd-Rosales,Pune,Closed,scrum methodology blockchain java,True,Mid-Level,Medium,Good
+P309,E470,0.48859843390450597,4,Software Development,14.2,Mumbai,Todd-Rosales,Pune,Closed,scrum methodology blockchain java,False,Expert,Medium,Good
+P309,E436,0.48859843390450597,5,Cybersecurity,5.3,Delhi,Todd-Rosales,Pune,Closed,scrum methodology blockchain java,False,Mid-Level,Medium,Good
+P350,E185,0.6668468647752686,1,Cybersecurity,10.9,Chennai,Perez-Miller,Delhi,Closed,data warehousing edge computing ci/cd pipelines,False,Senior,High,Good
+P350,E545,0.5475678479370195,2,Cloud Engineering,3.3,Chennai,Perez-Miller,Delhi,Closed,data warehousing edge computing ci/cd pipelines,False,Mid-Level,Medium,Good
+P350,E620,0.5397080351410289,3,DevOps,10.8,Mumbai,Perez-Miller,Delhi,Closed,data warehousing edge computing ci/cd pipelines,False,Senior,Medium,Good
+P350,E878,0.48679891377357853,4,AI Research,9.6,Mumbai,Perez-Miller,Delhi,Closed,data warehousing edge computing ci/cd pipelines,False,Senior,Medium,Good
+P350,E1035,0.45665088856638786,5,Software Development,12.2,Mumbai,Perez-Miller,Delhi,Closed,data warehousing edge computing ci/cd pipelines,False,Expert,Medium,Good
+P359,E333,0.7276875046716708,1,DevOps,9.3,Mumbai,Holland-Dunn,Chennai,Open,data visualization cybersecurity azure,False,Senior,High,Good
+P359,E988,0.6411881849642783,2,DevOps,13.4,Pune,Holland-Dunn,Chennai,Open,data visualization cybersecurity azure,False,Expert,High,Good
+P359,E121,0.5313638110123976,3,Data Science,9.1,Delhi,Holland-Dunn,Chennai,Open,data visualization cybersecurity azure,False,Senior,Medium,Good
+P359,E525,0.528628961805135,4,Software Development,14.4,Pune,Holland-Dunn,Chennai,Open,data visualization cybersecurity azure,False,Expert,Medium,Good
+P359,E777,0.5087036008013428,5,AI Research,10.1,Pune,Holland-Dunn,Chennai,Open,data visualization cybersecurity azure,False,Senior,Medium,Good
+P392,E202,0.6351173543543606,1,Data Science,8.2,Pune,"Jordan, Franklin and Brown",Pune,Closed,quantum computing terraform machine learning,True,Senior,High,Strong
+P392,E442,0.5530537743601668,2,Software Development,13.8,Pune,"Jordan, Franklin and Brown",Pune,Closed,quantum computing terraform machine learning,True,Expert,Medium,Good
+P392,E939,0.5160197038676069,3,Cloud Engineering,6.2,Chennai,"Jordan, Franklin and Brown",Pune,Closed,quantum computing terraform machine learning,False,Mid-Level,Medium,Good
+P392,E392,0.5155875244379673,4,Cybersecurity,8.1,Pune,"Jordan, Franklin and Brown",Pune,Closed,quantum computing terraform machine learning,True,Senior,Medium,Good
+P392,E519,0.485543462755275,5,Software Development,10.7,Pune,"Jordan, Franklin and Brown",Pune,Closed,quantum computing terraform machine learning,True,Senior,Medium,Good
+P356,E272,0.692878833739326,1,DevOps,11.6,Pune,Barnett-Myers,Mumbai,Open,sql database management ci/cd healthcare analytics,False,Senior,High,Good
+P356,E1087,0.6465549623614876,2,AI Research,14.1,Mumbai,Barnett-Myers,Mumbai,Open,sql database management ci/cd healthcare analytics,True,Expert,High,Strong
+P356,E352,0.611645213929668,3,AI Research,14.9,Pune,Barnett-Myers,Mumbai,Open,sql database management ci/cd healthcare analytics,False,Expert,High,Good
+P356,E754,0.6086652659676257,4,Cybersecurity,13.4,Pune,Barnett-Myers,Mumbai,Open,sql database management ci/cd healthcare analytics,False,Expert,High,Good
+P356,E178,0.5343318030920337,5,Software Development,4.8,Pune,Barnett-Myers,Mumbai,Open,sql database management ci/cd healthcare analytics,False,Mid-Level,Medium,Good
+P381,E663,0.6095937090060398,1,Software Development,12.1,Pune,Rhodes-Haynes,Chennai,Open,robotic process automation ci/cd incident response,False,Expert,High,Good
+P381,E927,0.5939049334539575,2,DevOps,8.6,Pune,Rhodes-Haynes,Chennai,Open,robotic process automation ci/cd incident response,False,Senior,Medium,Good
+P381,E213,0.5263336393638478,3,Cybersecurity,5.0,Mumbai,Rhodes-Haynes,Chennai,Open,robotic process automation ci/cd incident response,False,Mid-Level,Medium,Good
+P381,E271,0.5232554141763196,4,Cloud Engineering,8.1,Mumbai,Rhodes-Haynes,Chennai,Open,robotic process automation ci/cd incident response,False,Senior,Medium,Good
+P381,E294,0.5154423827654351,5,DevOps,9.2,Delhi,Rhodes-Haynes,Chennai,Open,robotic process automation ci/cd incident response,False,Senior,Medium,Good
+P344,E966,0.788021973516561,1,DevOps,14.8,Delhi,Gray-Crawford,Delhi,Closed,net real-time data processing blockchain,True,Expert,High,Strong
+P344,E359,0.7093576546611224,2,DevOps,4.1,Mumbai,Gray-Crawford,Delhi,Closed,net real-time data processing blockchain,False,Mid-Level,High,Good
+P344,E478,0.6534030599392657,3,Data Science,9.8,Mumbai,Gray-Crawford,Delhi,Closed,net real-time data processing blockchain,False,Senior,High,Good
+P344,E594,0.6190508146896945,4,Software Development,13.9,Pune,Gray-Crawford,Delhi,Closed,net real-time data processing blockchain,False,Expert,High,Good
+P344,E471,0.6066794537143742,5,Data Science,7.2,Pune,Gray-Crawford,Delhi,Closed,net real-time data processing blockchain,False,Senior,High,Good
+P304,E1020,0.569505209517866,1,Cloud Engineering,9.0,Chennai,Rodriguez-Dominguez,Chennai,Closed,edge computing jenkins iot,True,Senior,Medium,Good
+P304,E264,0.5260223615042384,2,Software Development,11.7,Mumbai,Rodriguez-Dominguez,Chennai,Closed,edge computing jenkins iot,False,Senior,Medium,Good
+P304,E118,0.46370491851870904,3,AI Research,11.6,Chennai,Rodriguez-Dominguez,Chennai,Closed,edge computing jenkins iot,True,Senior,Medium,Good
+P304,E193,0.44574212696564797,4,DevOps,10.9,Mumbai,Rodriguez-Dominguez,Chennai,Closed,edge computing jenkins iot,False,Senior,Medium,Good
+P304,E493,0.44458407560457003,5,DevOps,11.5,Mumbai,Rodriguez-Dominguez,Chennai,Closed,edge computing jenkins iot,False,Senior,Medium,Good
+P382,E288,0.6445595481677855,1,Cybersecurity,13.9,Pune,Reid PLC,Pune,Open,blockchain ci/cd rest apis,True,Expert,High,Strong
+P382,E1003,0.6438338878292217,2,Software Development,4.2,Mumbai,Reid PLC,Pune,Open,blockchain ci/cd rest apis,False,Mid-Level,High,Good
+P382,E1053,0.608509359699585,3,Data Science,10.1,Pune,Reid PLC,Pune,Open,blockchain ci/cd rest apis,True,Senior,High,Strong
+P382,E1049,0.5936595144664552,4,Data Science,3.4,Pune,Reid PLC,Pune,Open,blockchain ci/cd rest apis,True,Mid-Level,Medium,Good
+P382,E833,0.5810464767712074,5,Data Science,9.6,Pune,Reid PLC,Pune,Open,blockchain ci/cd rest apis,True,Senior,Medium,Good
+P319,E607,0.6467959146755904,1,AI Research,14.7,Pune,Williams Ltd,Mumbai,Open,aws react quantum computing,False,Expert,High,Good
+P319,E519,0.6037451636831779,2,Software Development,10.7,Pune,Williams Ltd,Mumbai,Open,aws react quantum computing,False,Senior,High,Good
+P319,E291,0.5741941665327183,3,Cloud Engineering,14.0,Chennai,Williams Ltd,Mumbai,Open,aws react quantum computing,False,Expert,Medium,Good
+P319,E210,0.5246461184756859,4,AI Research,10.7,Delhi,Williams Ltd,Mumbai,Open,aws react quantum computing,False,Senior,Medium,Good
+P319,E781,0.44871572004109483,5,Data Science,13.8,Chennai,Williams Ltd,Mumbai,Open,aws react quantum computing,False,Expert,Medium,Good
+P389,E562,0.7186998888440439,1,Cybersecurity,11.8,Chennai,"Ware, Farmer and Fernandez",Mumbai,Closed,nosql database management api development big data,False,Senior,High,Good
+P389,E176,0.7182699198210535,2,Data Science,12.9,Mumbai,"Ware, Farmer and Fernandez",Mumbai,Closed,nosql database management api development big data,True,Expert,High,Strong
+P389,E172,0.697729535669209,3,Software Development,12.8,Mumbai,"Ware, Farmer and Fernandez",Mumbai,Closed,nosql database management api development big data,True,Expert,High,Strong
+P389,E759,0.6949012493152299,4,Software Development,4.5,Mumbai,"Ware, Farmer and Fernandez",Mumbai,Closed,nosql database management api development big data,True,Mid-Level,High,Strong
+P389,E769,0.6691624272909085,5,DevOps,12.8,Chennai,"Ware, Farmer and Fernandez",Mumbai,Closed,nosql database management api development big data,False,Expert,High,Good
+P367,E677,0.599627212695885,1,DevOps,13.0,Delhi,Smith-Evans,Mumbai,Closed,serverless architecture terraform aws,False,Expert,Medium,Good
+P367,E794,0.4823560393631027,2,Software Development,13.7,Delhi,Smith-Evans,Mumbai,Closed,serverless architecture terraform aws,False,Expert,Medium,Good
+P367,E252,0.4572791270469635,3,Cybersecurity,12.1,Chennai,Smith-Evans,Mumbai,Closed,serverless architecture terraform aws,False,Expert,Medium,Good
+P367,E838,0.41408069543998405,4,Cybersecurity,3.4,Chennai,Smith-Evans,Mumbai,Closed,serverless architecture terraform aws,False,Mid-Level,Medium,Good
+P367,E576,0.40382573974419667,5,Cloud Engineering,8.4,Pune,Smith-Evans,Mumbai,Closed,serverless architecture terraform aws,False,Senior,Medium,Good
+P326,E1077,0.6269914003748083,1,Cloud Engineering,7.7,Delhi,Ramos-Smith,Delhi,Open,big data ci/cd pipelines scrum,True,Senior,High,Strong
+P326,E281,0.5057517669536578,2,Cloud Engineering,13.3,Delhi,Ramos-Smith,Delhi,Open,big data ci/cd pipelines scrum,True,Expert,Medium,Good
+P326,E462,0.4797434684391001,3,AI Research,3.9,Mumbai,Ramos-Smith,Delhi,Open,big data ci/cd pipelines scrum,False,Mid-Level,Medium,Good
+P326,E983,0.47623542454902645,4,Data Science,9.8,Mumbai,Ramos-Smith,Delhi,Open,big data ci/cd pipelines scrum,False,Senior,Medium,Good
+P326,E408,0.4718433639297914,5,Software Development,4.7,Mumbai,Ramos-Smith,Delhi,Open,big data ci/cd pipelines scrum,False,Mid-Level,Medium,Good
+P370,E884,0.5140245390061366,1,Cloud Engineering,3.9,Pune,Jones LLC,Mumbai,Open,net java python,False,Mid-Level,Medium,Good
+P370,E803,0.3688326144395509,2,AI Research,14.9,Pune,Jones LLC,Mumbai,Open,net java python,False,Expert,Medium,Fair
+P370,E721,0.3666628831592028,3,DevOps,4.3,Pune,Jones LLC,Mumbai,Open,net java python,False,Mid-Level,Medium,Fair
+P370,E799,0.3609631057955017,4,DevOps,12.3,Mumbai,Jones LLC,Mumbai,Open,net java python,True,Expert,Medium,Fair
+P370,E843,0.3381481127665176,5,AI Research,14.8,Delhi,Jones LLC,Mumbai,Open,net java python,False,Expert,Medium,Fair
+P352,E135,0.6783521993083729,1,AI Research,12.0,Delhi,Davis-Powell,Mumbai,Closed,microservices architecture penetration testing container orchestration,False,Expert,High,Good
+P352,E215,0.6158546306973486,2,AI Research,13.7,Pune,Davis-Powell,Mumbai,Closed,microservices architecture penetration testing container orchestration,False,Expert,High,Good
+P352,E251,0.5642498826346167,3,DevOps,9.8,Pune,Davis-Powell,Mumbai,Closed,microservices architecture penetration testing container orchestration,False,Senior,Medium,Good
+P352,E741,0.5184409573221467,4,Data Science,11.2,Delhi,Davis-Powell,Mumbai,Closed,microservices architecture penetration testing container orchestration,False,Senior,Medium,Good
+P352,E1098,0.48239151299394906,5,DevOps,14.8,Delhi,Davis-Powell,Mumbai,Closed,microservices architecture penetration testing container orchestration,False,Expert,Medium,Good
+P312,E481,0.6135354476462692,1,Cloud Engineering,9.3,Chennai,Welch Inc,Delhi,Open,rest apis nosql scrum,False,Senior,High,Good
+P312,E386,0.5920467099784453,2,Cybersecurity,5.4,Chennai,Welch Inc,Delhi,Open,rest apis nosql scrum,False,Mid-Level,Medium,Good
+P312,E805,0.5876503529906035,3,AI Research,10.4,Pune,Welch Inc,Delhi,Open,rest apis nosql scrum,False,Senior,Medium,Good
+P312,E441,0.581909530562729,4,Software Development,4.3,Delhi,Welch Inc,Delhi,Open,rest apis nosql scrum,True,Mid-Level,Medium,Good
+P312,E224,0.5785185986972636,5,Software Development,11.0,Delhi,Welch Inc,Delhi,Open,rest apis nosql scrum,True,Senior,Medium,Good
+P313,E189,0.7974943317854163,1,DevOps,4.1,Pune,Hanna Inc,Mumbai,Closed,nosql devops practices sql database management,False,Mid-Level,High,Good
+P313,E950,0.7668156200163301,2,AI Research,9.0,Mumbai,Hanna Inc,Mumbai,Closed,nosql devops practices sql database management,True,Senior,High,Strong
+P313,E743,0.7579763405611271,3,Data Science,14.9,Pune,Hanna Inc,Mumbai,Closed,nosql devops practices sql database management,False,Expert,High,Good
+P313,E562,0.7237567955518719,4,Cybersecurity,11.8,Chennai,Hanna Inc,Mumbai,Closed,nosql devops practices sql database management,False,Senior,High,Good
+P313,E724,0.7133368334700231,5,DevOps,8.2,Delhi,Hanna Inc,Mumbai,Closed,nosql devops practices sql database management,False,Senior,High,Good
+P315,E178,0.5695491991696133,1,Software Development,4.8,Pune,Riggs PLC,Pune,Open,java sql database management jenkins,True,Mid-Level,Medium,Good
+P315,E260,0.5633880732044922,2,DevOps,12.6,Pune,Riggs PLC,Pune,Open,java sql database management jenkins,True,Expert,Medium,Good
+P315,E678,0.5447002226719919,3,DevOps,6.7,Mumbai,Riggs PLC,Pune,Open,java sql database management jenkins,False,Mid-Level,Medium,Good
+P315,E693,0.5422150268446704,4,DevOps,4.6,Delhi,Riggs PLC,Pune,Open,java sql database management jenkins,False,Mid-Level,Medium,Good
+P315,E239,0.5403970139034721,5,AI Research,10.4,Pune,Riggs PLC,Pune,Open,java sql database management jenkins,True,Senior,Medium,Good
+P358,E531,0.5082175283619861,1,Software Development,8.6,Pune,"Hill, Santos and Vazquez",Pune,Closed,postgresql serverless architecture cybersecurity,True,Senior,Medium,Good
+P358,E206,0.5082175283619861,2,Cloud Engineering,11.0,Chennai,"Hill, Santos and Vazquez",Pune,Closed,postgresql serverless architecture cybersecurity,False,Senior,Medium,Good
+P358,E774,0.47824063880823264,3,DevOps,4.7,Mumbai,"Hill, Santos and Vazquez",Pune,Closed,postgresql serverless architecture cybersecurity,False,Mid-Level,Medium,Good
+P358,E1097,0.4573421961937499,4,Data Science,9.6,Delhi,"Hill, Santos and Vazquez",Pune,Closed,postgresql serverless architecture cybersecurity,False,Senior,Medium,Good
+P358,E710,0.45675838349490505,5,DevOps,6.7,Chennai,"Hill, Santos and Vazquez",Pune,Closed,postgresql serverless architecture cybersecurity,False,Mid-Level,Medium,Good
+P355,E1052,0.7008868737648064,1,Cybersecurity,5.9,Delhi,Novak Inc,Pune,Closed,quantum computing kubernetes rest apis,False,Mid-Level,High,Good
+P355,E431,0.6267520809627773,2,Cloud Engineering,12.4,Mumbai,Novak Inc,Pune,Closed,quantum computing kubernetes rest apis,False,Expert,High,Good
+P355,E958,0.5964482737800549,3,Cybersecurity,3.5,Pune,Novak Inc,Pune,Closed,quantum computing kubernetes rest apis,True,Mid-Level,Medium,Good
+P355,E732,0.5813921604715558,4,Cloud Engineering,6.6,Chennai,Novak Inc,Pune,Closed,quantum computing kubernetes rest apis,False,Mid-Level,Medium,Good
+P355,E781,0.5720489750266287,5,Data Science,13.8,Chennai,Novak Inc,Pune,Closed,quantum computing kubernetes rest apis,False,Expert,Medium,Good
+P320,E862,0.6596580131396804,1,AI Research,14.4,Pune,"Fitzpatrick, Smith and Michael",Chennai,Closed,business intelligence devops practices api development,False,Expert,High,Good
+P320,E861,0.6433732406217874,2,Software Development,12.4,Chennai,"Fitzpatrick, Smith and Michael",Chennai,Closed,business intelligence devops practices api development,True,Expert,High,Strong
+P320,E668,0.6422624362642437,3,DevOps,6.1,Pune,"Fitzpatrick, Smith and Michael",Chennai,Closed,business intelligence devops practices api development,False,Mid-Level,High,Good
+P320,E1081,0.6184115524990976,4,DevOps,3.9,Chennai,"Fitzpatrick, Smith and Michael",Chennai,Closed,business intelligence devops practices api development,True,Mid-Level,High,Strong
+P320,E1007,0.5770028331879741,5,AI Research,14.7,Mumbai,"Fitzpatrick, Smith and Michael",Chennai,Closed,business intelligence devops practices api development,False,Expert,Medium,Good
+P327,E969,0.7735126375335828,1,AI Research,3.0,Mumbai,Chung-Alvarez,Delhi,Closed,tensorflow penetration testing devops practices,False,Mid-Level,High,Good
+P327,E1017,0.5791041181696491,2,Software Development,14.8,Pune,Chung-Alvarez,Delhi,Closed,tensorflow penetration testing devops practices,False,Expert,Medium,Good
+P327,E1092,0.5394191154815031,3,Cloud Engineering,4.4,Mumbai,Chung-Alvarez,Delhi,Closed,tensorflow penetration testing devops practices,False,Mid-Level,Medium,Good
+P327,E332,0.4981112810424694,4,Cybersecurity,6.2,Pune,Chung-Alvarez,Delhi,Closed,tensorflow penetration testing devops practices,False,Mid-Level,Medium,Good
+P327,E632,0.49587800291312495,5,Cybersecurity,3.3,Delhi,Chung-Alvarez,Delhi,Closed,tensorflow penetration testing devops practices,True,Mid-Level,Medium,Good
+P316,E869,0.621786125672129,1,Software Development,10.8,Chennai,Lutz-King,Delhi,Open,mobile development tensorflow ci/cd,False,Senior,High,Good
+P316,E778,0.590071209872911,2,Cloud Engineering,9.5,Mumbai,Lutz-King,Delhi,Open,mobile development tensorflow ci/cd,False,Senior,Medium,Good
+P316,E275,0.5556354309939737,3,Data Science,10.7,Mumbai,Lutz-King,Delhi,Open,mobile development tensorflow ci/cd,False,Senior,Medium,Good
+P316,E385,0.5269593145316699,4,DevOps,13.2,Delhi,Lutz-King,Delhi,Open,mobile development tensorflow ci/cd,True,Expert,Medium,Good
+P316,E938,0.5193751088943882,5,DevOps,4.6,Pune,Lutz-King,Delhi,Open,mobile development tensorflow ci/cd,False,Mid-Level,Medium,Good

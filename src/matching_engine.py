@@ -18,7 +18,14 @@ class EmployeeProjectMatcher:
         self.logger = Logger(__name__)
         self.df_emp = df_emp
         self.similarity_matrices = {}
-        self.filters = []
+        
+        # Store filter configurations instead of functions for pickling
+        self.filter_configs = {
+            'experience': {'enabled': False, 'min_years': None, 'max_years': None},
+            'department': {'enabled': False, 'preferred': None, 'excluded': None},
+            'location': {'enabled': False, 'preferred': None, 'excluded': None},
+            'similarity_threshold': {'enabled': False, 'min_similarity': None}
+        }
         
     def compute_similarity_matrix(self, employee_matrix: pd.DataFrame, 
                                 project_matrix: pd.DataFrame, method: str = 'cosine') -> pd.DataFrame:
@@ -65,71 +72,41 @@ class EmployeeProjectMatcher:
         """Add experience-based filter"""
         min_years = min_years or self.config.MIN_EXPERIENCE_YEARS
         
-        def experience_filter(employee_ids):
-            eligible = self.df_emp[
-                (self.df_emp['Years_Experience'] >= min_years) &
-                (self.df_emp['Years_Experience'] <= (max_years or float('inf')))
-            ]['Employee_ID'].tolist()
-            return [emp for emp in employee_ids if emp in eligible]
-        
-        self.filters.append(('experience', experience_filter))
+        self.filter_configs['experience'] = {
+            'enabled': True,
+            'min_years': min_years,
+            'max_years': max_years
+        }
         self.logger.info(f"Added experience filter: {min_years}+ years")
     
     def add_department_filter(self, preferred_departments: List[str] = None, 
                             excluded_departments: List[str] = None):
         """Add department-based filter"""
-        def department_filter(employee_ids):
-            if preferred_departments:
-                eligible = self.df_emp[
-                    self.df_emp['Department'].isin(preferred_departments)
-                ]['Employee_ID'].tolist()
-                employee_ids = [emp for emp in employee_ids if emp in eligible]
-            
-            if excluded_departments:
-                excluded = self.df_emp[
-                    self.df_emp['Department'].isin(excluded_departments)
-                ]['Employee_ID'].tolist()
-                employee_ids = [emp for emp in employee_ids if emp not in excluded]
-            
-            return employee_ids
-        
-        self.filters.append(('department', department_filter))
+        self.filter_configs['department'] = {
+            'enabled': True,
+            'preferred': preferred_departments,
+            'excluded': excluded_departments
+        }
         self.logger.info("Added department filter")
     
     def add_location_filter(self, preferred_locations: List[str] = None,
                           excluded_locations: List[str] = None):
         """Add location-based filter"""
-        def location_filter(employee_ids):
-            if preferred_locations:
-                eligible = self.df_emp[
-                    self.df_emp['Location'].isin(preferred_locations)
-                ]['Employee_ID'].tolist()
-                employee_ids = [emp for emp in employee_ids if emp in eligible]
-            
-            if excluded_locations:
-                excluded = self.df_emp[
-                    self.df_emp['Location'].isin(excluded_locations)
-                ]['Employee_ID'].tolist()
-                employee_ids = [emp for emp in employee_ids if emp not in excluded]
-            
-            return employee_ids
-        
-        self.filters.append(('location', location_filter))
+        self.filter_configs['location'] = {
+            'enabled': True,
+            'preferred': preferred_locations,
+            'excluded': excluded_locations
+        }
         self.logger.info("Added location filter")
     
     def add_similarity_threshold_filter(self, min_similarity: float = None):
         """Add minimum similarity threshold filter"""
         min_similarity = min_similarity or self.config.MIN_SIMILARITY_THRESHOLD
         
-        def similarity_filter(employee_ids, project_id, similarity_matrix):
-            if project_id not in similarity_matrix.index:
-                return employee_ids
-            
-            project_similarities = similarity_matrix.loc[project_id]
-            eligible = project_similarities[project_similarities >= min_similarity].index.tolist()
-            return [emp for emp in employee_ids if emp in eligible]
-        
-        self.filters.append(('similarity_threshold', similarity_filter))
+        self.filter_configs['similarity_threshold'] = {
+            'enabled': True,
+            'min_similarity': min_similarity
+        }
         self.logger.info(f"Added similarity threshold filter: {min_similarity}+")
     
     def apply_filters(self, employee_ids: List[str], project_id: str = None, 
@@ -137,11 +114,64 @@ class EmployeeProjectMatcher:
         """Apply all configured filters"""
         filtered_ids = employee_ids.copy()
         
-        for filter_name, filter_func in self.filters:
-            if filter_name == 'similarity_threshold' and project_id and similarity_matrix is not None:
-                filtered_ids = filter_func(filtered_ids, project_id, similarity_matrix)
-            else:
-                filtered_ids = filter_func(filtered_ids)
+        # Apply experience filter
+        if self.filter_configs['experience']['enabled']:
+            config = self.filter_configs['experience']
+            min_years = config['min_years']
+            max_years = config['max_years'] or float('inf')
+            
+            eligible = self.df_emp[
+                (self.df_emp['Years_Experience'] >= min_years) &
+                (self.df_emp['Years_Experience'] <= max_years)
+            ]['Employee_ID'].tolist()
+            filtered_ids = [emp for emp in filtered_ids if emp in eligible]
+        
+        # Apply department filter
+        if self.filter_configs['department']['enabled']:
+            config = self.filter_configs['department']
+            preferred = config['preferred']
+            excluded = config['excluded']
+            
+            if preferred:
+                eligible = self.df_emp[
+                    self.df_emp['Department'].isin(preferred)
+                ]['Employee_ID'].tolist()
+                filtered_ids = [emp for emp in filtered_ids if emp in eligible]
+            
+            if excluded:
+                excluded_ids = self.df_emp[
+                    self.df_emp['Department'].isin(excluded)
+                ]['Employee_ID'].tolist()
+                filtered_ids = [emp for emp in filtered_ids if emp not in excluded_ids]
+        
+        # Apply location filter
+        if self.filter_configs['location']['enabled']:
+            config = self.filter_configs['location']
+            preferred = config['preferred']
+            excluded = config['excluded']
+            
+            if preferred:
+                eligible = self.df_emp[
+                    self.df_emp['Location'].isin(preferred)
+                ]['Employee_ID'].tolist()
+                filtered_ids = [emp for emp in filtered_ids if emp in eligible]
+            
+            if excluded:
+                excluded_ids = self.df_emp[
+                    self.df_emp['Location'].isin(excluded)
+                ]['Employee_ID'].tolist()
+                filtered_ids = [emp for emp in filtered_ids if emp not in excluded_ids]
+        
+        # Apply similarity threshold filter
+        if (self.filter_configs['similarity_threshold']['enabled'] and 
+            project_id and similarity_matrix is not None):
+            config = self.filter_configs['similarity_threshold']
+            min_similarity = config['min_similarity']
+            
+            if project_id in similarity_matrix.index:
+                project_similarities = similarity_matrix.loc[project_id]
+                eligible = project_similarities[project_similarities >= min_similarity].index.tolist()
+                filtered_ids = [emp for emp in filtered_ids if emp in eligible]
         
         return filtered_ids
     

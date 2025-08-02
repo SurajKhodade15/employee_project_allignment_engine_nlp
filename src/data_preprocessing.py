@@ -38,15 +38,20 @@ class DataPreprocessor:
         
         df_clean = df.copy()
         
-        # Handle missing values
-        df_clean['Department'].fillna('Unknown', inplace=True)
-        df_clean['Location'].fillna('Unknown', inplace=True)
+        # Handle missing values using proper pandas methods
+        df_clean = df_clean.fillna({
+            'Department': 'Unknown',
+            'Location': 'Unknown',
+            'Years_Experience': 0.0,
+            'Current_Project_ID': ''
+        })
         
         # Standardize department names
         dept_mapping = {
             'AI Research': 'AI Research',
             'Data Science': 'Data Science',
             'Software Development': 'Software Development',
+            'Full Stack Dev': 'Software Development',
             'DevOps': 'DevOps',
             'QA': 'Quality Assurance',
             'Product Management': 'Product Management'
@@ -55,6 +60,10 @@ class DataPreprocessor:
         
         # Standardize locations
         df_clean['Location'] = df_clean['Location'].str.title()
+        
+        # Handle years of experience
+        df_clean['Years_Experience'] = pd.to_numeric(df_clean['Years_Experience'], errors='coerce')
+        df_clean['Years_Experience'] = df_clean['Years_Experience'].fillna(0)
         
         self.logger.info(f"Cleaned employee master: {len(df_clean)} records")
         return df_clean
@@ -65,14 +74,15 @@ class DataPreprocessor:
         
         df_clean = df.copy()
         
-        # Clean skills text
-        df_clean['Skills'] = df_clean['Skills'].apply(format_skills_text)
+        # Handle missing values
+        df_clean = df_clean.fillna({
+            'Experience_Text': ''
+        })
         
-        # Handle years of experience
-        df_clean['Years_Experience'] = pd.to_numeric(df_clean['Years_Experience'], errors='coerce')
-        df_clean['Years_Experience'].fillna(0, inplace=True)
+        # Clean experience text (which contains skills information)
+        df_clean['Skills'] = df_clean['Experience_Text'].apply(format_skills_text)
         
-        # Remove records with no skills
+        # Remove records with no experience/skills
         df_clean = df_clean[df_clean['Skills'] != '']
         
         self.logger.info(f"Cleaned employee experience: {len(df_clean)} records")
@@ -84,10 +94,14 @@ class DataPreprocessor:
         
         df_clean = df.copy()
         
-        # Handle missing values
-        df_clean['Client_Name'].fillna('Unknown Client', inplace=True)
-        df_clean['Location'].fillna('Remote', inplace=True)
-        df_clean['Status'].fillna('Active', inplace=True)
+        # Handle missing values using proper pandas methods
+        df_clean = df_clean.fillna({
+            'Client_Name': 'Unknown Client',
+            'Location': 'Remote',
+            'Status': 'Active',
+            'Required_Skills': '',
+            'Project_Description': ''
+        })
         
         # Clean required skills
         df_clean['Required_Skills'] = df_clean['Required_Skills'].apply(format_skills_text)
@@ -108,13 +122,16 @@ class DataPreprocessor:
         # Merge master and experience data
         df_enhanced = df_master.merge(df_experience, on='Employee_ID', how='inner')
         
-        # Add derived features
+        # Add derived features using Years_Experience from master data
         df_enhanced['Experience_Level'] = df_enhanced['Years_Experience'].apply(
             lambda x: 'Junior' if x < 3 else 'Mid-Level' if x < 7 else 'Senior' if x < 12 else 'Expert'
         )
         
-        # Create a combined skills text for each employee
+        # Create a combined skills text for each employee (using Skills from experience data)
         df_enhanced['All_Skills'] = df_enhanced['Skills']
+        
+        # Add additional useful columns
+        df_enhanced['Has_Current_Project'] = df_enhanced['Current_Project_ID'].notna() & (df_enhanced['Current_Project_ID'] != '')
         
         self.logger.info(f"Enhanced employee data: {len(df_enhanced)} records")
         return df_enhanced
