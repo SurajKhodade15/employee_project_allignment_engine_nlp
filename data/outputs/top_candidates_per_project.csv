@@ -1,0 +1,101 @@
+Project_ID,Employee_ID,Similarity_Score,Rank,Department,Years_Experience,Location_Employee,Client_Name,Location_Project,Status,Required_Skills,Location_Match,Experience_Level
+P353,E963,0.44100600557475156,1,Cybersecurity,11.5,Pune,Lewis Group,Delhi,Closed,"Mobile Development, Microservices, NoSQL",False,Senior
+P378,E238,0.32437471058500755,1,Data Science,8.7,Delhi,Torres-Wong,Delhi,Closed,"DevOps Practices, Kubernetes, AWS",True,Senior
+P327,E1092,0.2851689292612707,1,Cloud Engineering,4.4,Mumbai,Chung-Alvarez,Delhi,Closed,"TensorFlow, Penetration Testing, DevOps Practices",False,Mid-Level
+P365,E684,0.18333619620970273,1,Full Stack Dev,10.0,Delhi,"Hill, Adams and May",Delhi,Open,"Network Security, Quantum Computing, NoSQL Database Management",True,Senior
+P328,E1054,0.36224923655614727,1,DevOps,7.3,Pune,"Garner, Doyle and Oliver",Chennai,Open,"Docker, Machine Learning, GraphQL",False,Senior
+P326,E1077,0.3758302581711044,1,Cloud Engineering,7.7,Delhi,Ramos-Smith,Delhi,Open,"Big Data, CI/CD Pipelines, Scrum",True,Senior
+P308,E631,0.19698105929231194,1,AI Research,13.8,Chennai,Mathis Group,Chennai,Open,"Network Security, SQL Database Management, Big Data",True,Expert
+P317,E690,0.20427334636018613,1,Full Stack Dev,12.3,Delhi,"Thomas, Schneider and Contreras",Pune,Open,"Real-time Data Processing, CI/CD Pipelines, Agile Project Management",False,Expert
+P339,E689,0.31033854494483376,1,Cybersecurity,13.4,Pune,"Wheeler, Lewis and Nash",Pune,Closed,"Microservices, GraphQL API Development, NoSQL Database Management",True,Expert
+P386,E207,0.3762894209626607,1,Full Stack Dev,7.5,Chennai,Roberts Inc,Chennai,Open,"CI/CD, Docker, Data Warehousing",True,Senior
+P307,E765,0.3139818028182373,1,Full Stack Dev,13.9,Mumbai,"Lawson, Kelly and Edwards",Pune,Closed,"Scrum, Data Engineering, NoSQL Database Management",False,Expert
+P315,E1018,0.2752371739367566,1,Full Stack Dev,10.9,Delhi,Riggs PLC,Pune,Open,"Java, SQL Database Management, Jenkins",False,Senior
+P394,E421,0.2892616396420601,1,AI Research,10.1,Pune,Morris-Willis,Chennai,Open,"Jenkins, Data Engineering, Mobile Development",False,Senior
+P356,E272,0.2002572609040181,1,DevOps,11.6,Pune,Barnett-Myers,Mumbai,Open,"SQL Database Management, CI/CD, Healthcare Analytics",False,Senior
+P302,E123,0.3178405978942249,1,AI Research,13.1,Delhi,"Cunningham, Anderson and Fernandez",Pune,Open,"Cloud Security, Container Orchestration, Python",False,Expert
+P362,E611,0.3202854037378433,1,Cloud Engineering,12.6,Delhi,White-Le,Mumbai,Open,"Cybersecurity, Data Privacy Compliance, Serverless Architecture",False,Expert
+P352,E251,0.199810276737532,1,DevOps,9.8,Pune,Davis-Powell,Mumbai,Closed,"Microservices Architecture, Penetration Testing, Container Orchestration",False,Senior
+P314,E390,0.34699121157432505,1,Full Stack Dev,13.6,Mumbai,Robbins PLC,Delhi,Closed,"Microservices, CI/CD, Scrum Methodology",False,Expert
+P323,E816,0.4785067926552942,1,AI Research,9.0,Pune,Fuentes-Potter,Delhi,Closed,"Docker, Python, CI/CD",False,Senior
+P368,E134,0.5317778456641886,1,Full Stack Dev,8.8,Pune,Herrera LLC,Mumbai,Open,"Node.js, Quantum Computing, Kubernetes",False,Senior
+P383,E1018,0.30031035833525377,1,Full Stack Dev,10.9,Delhi,Davis PLC,Pune,Open,"Java, Blockchain, Jenkins",False,Senior
+P380,E124,0.5121885287744605,1,Full Stack Dev,10.9,Delhi,"Parker, Arias and Payne",Pune,Open,"Node.js, Cloud Security, IoT",False,Senior
+P364,E507,0.29293881438144764,1,AI Research,14.8,Pune,Carpenter and Sons,Mumbai,Closed,"Quantum Computing, Robotic Process Automation, Blockchain",False,Expert
+P366,E777,0.32491307836011984,1,AI Research,10.1,Pune,Jones Group,Pune,Closed,".Net, Big Data, Data Governance",True,Senior
+P397,E200,0.4798628641313337,1,Data Science,6.3,Mumbai,Bradford-West,Chennai,Closed,"NLP, IoT, Cloud Security",False,Mid-Level
+P335,E123,0.3671115373999046,1,AI Research,13.1,Delhi,Kim Ltd,Chennai,Open,"CI/CD, Python, Cloud Security",False,Expert
+P361,E194,0.2032211725636911,1,Full Stack Dev,4.4,Pune,Alexander-Mann,Chennai,Open,"CI/CD Pipelines, Quantum Computing, Network Security",False,Mid-Level
+P393,E371,0.45236116408141186,1,Full Stack Dev,3.5,Pune,Sanchez PLC,Mumbai,Open,"Real-time Data Processing, NLP, Terraform",False,Mid-Level
+P351,E962,0.5523560093440244,1,Cybersecurity,5.8,Chennai,"Peterson, Green and Greene",Pune,Closed,"CI/CD, Blockchain, Scrum",False,Mid-Level
+P398,E118,0.42997092162712797,1,AI Research,11.6,Chennai,"Howell, Herrera and Torres",Mumbai,Open,"DevOps Practices, IoT, Jenkins",False,Senior
+P400,E408,0.24151014421009517,1,Full Stack Dev,4.7,Mumbai,"Reed, Shannon and Chen",Pune,Open,"API Development, CI/CD Pipelines, CI/CD",False,Mid-Level
+P329,E857,0.3382729264288621,1,Data Science,10.2,Pune,"Bowman, Sanchez and Lowe",Pune,Open,".Net, Scrum Methodology, Serverless Architecture",True,Senior
+P385,E663,0.20604324492577283,1,Full Stack Dev,12.1,Pune,Bailey-Valdez,Delhi,Open,"Robotic Process Automation, Machine Learning, CI/CD Pipelines",False,Expert
+P319,E291,0.30586584032049524,1,Cloud Engineering,14.0,Chennai,Williams Ltd,Mumbai,Open,"AWS, React, Quantum Computing",False,Expert
+P354,E465,0.4460211332718026,1,AI Research,10.4,Mumbai,"Carpenter, Vaughn and Fox",Pune,Open,"Cybersecurity, SQL, Microservices",False,Senior
+P343,E750,0.4273507500854563,1,DevOps,13.7,Pune,Adams Inc,Delhi,Open,"Business Intelligence, Node.js, CI/CD Pipelines",False,Expert
+P360,E1059,0.44103620155866124,1,DevOps,8.5,Delhi,Meyers LLC,Pune,Open,"Python, AWS, Data Quality Management",False,Senior
+P340,E559,0.48576164429137325,1,Data Science,9.7,Pune,Gray LLC,Delhi,Closed,"NoSQL, .Net, CI/CD Pipelines",False,Senior
+P333,E686,0.326574296006348,1,AI Research,13.4,Delhi,Robinson-Martin,Delhi,Open,"IoT, Big Data, Microservices",True,Expert
+P305,E371,0.4721105893694548,1,Full Stack Dev,3.5,Pune,Medina-Maldonado,Mumbai,Open,"Terraform, SQL Database Management, NLP",False,Mid-Level
+P391,E1079,0.27690877023514404,1,AI Research,13.1,Pune,"Lane, Woodward and Martinez",Mumbai,Open,"AWS, Data Warehousing, TensorFlow",False,Expert
+P309,E812,0.3022248421054214,1,Data Science,4.7,Pune,Todd-Rosales,Pune,Closed,"Scrum Methodology, Blockchain, Java",True,Mid-Level
+P387,E1003,0.33813690388976936,1,Full Stack Dev,4.2,Mumbai,Lyons Ltd,Delhi,Closed,".Net, REST APIs, Blockchain",False,Mid-Level
+P311,E593,0.5104629043355773,1,Cybersecurity,4.3,Chennai,Garcia-Hernandez,Pune,Open,"TensorFlow, Scrum, Jenkins",False,Mid-Level
+P372,E716,0.29750486941811616,1,Cloud Engineering,12.2,Pune,West-Hamilton,Delhi,Open,"Network Security, Big Data, Cybersecurity",False,Expert
+P389,E172,0.18458092735761625,1,Full Stack Dev,12.8,Mumbai,"Ware, Farmer and Fernandez",Mumbai,Closed,"NoSQL Database Management, API Development, Big Data",True,Expert
+P395,E942,0.20779469146619095,1,Cybersecurity,13.5,Delhi,Davidson-Davis,Chennai,Open,"Agile Project Management, CI/CD, Robotic Process Automation",False,Expert
+P384,E305,0.2717623167778052,1,Cybersecurity,3.3,Chennai,Wilson-Cunningham,Pune,Open,"Blockchain, Jenkins, API Development",False,Mid-Level
+P370,E715,0.34620948795951934,1,AI Research,13.9,Mumbai,Jones LLC,Mumbai,Open,".Net, Java, Python",True,Expert
+P392,E939,0.3284395424932473,1,Cloud Engineering,6.2,Chennai,"Jordan, Franklin and Brown",Pune,Closed,"Quantum Computing, Terraform, Machine Learning",False,Mid-Level
+P379,E809,0.28268244835339834,1,AI Research,11.5,Mumbai,"Johnson, Jefferson and Sanchez",Pune,Open,"Java, Mobile Development, Incident Response",False,Senior
+P358,E206,0.2698390429044482,1,Cloud Engineering,11.0,Chennai,"Hill, Santos and Vazquez",Pune,Closed,"PostgreSQL, Serverless Architecture, Cybersecurity",False,Senior
+P388,E864,0.2632220701985959,1,Cybersecurity,4.9,Chennai,"Wright, Faulkner and Burke",Mumbai,Open,"Healthcare Analytics, Scrum, Agile Project Management",False,Mid-Level
+P344,E359,0.36440323869921576,1,DevOps,4.1,Mumbai,Gray-Crawford,Delhi,Closed,".Net, Real-time Data Processing, Blockchain",False,Mid-Level
+P390,E478,0.3224693889688276,1,Data Science,9.8,Mumbai,Trujillo Inc,Mumbai,Closed,"Blockchain, Real-time Data Processing, Network Security",True,Senior
+P382,E1003,0.3587216452655314,1,Full Stack Dev,4.2,Mumbai,Reid PLC,Pune,Open,"Blockchain, CI/CD, REST APIs",False,Mid-Level
+P316,E778,0.32887329296324286,1,Cloud Engineering,9.5,Mumbai,Lutz-King,Delhi,Open,"Mobile Development, TensorFlow, CI/CD",False,Senior
+P313,E743,0.3242839090205795,1,Data Science,14.9,Pune,Hanna Inc,Mumbai,Closed,"NoSQL, DevOps Practices, SQL Database Management",False,Expert
+P373,E472,0.572882321006609,1,AI Research,12.8,Pune,Fischer-Thomas,Delhi,Closed,"Node.js, PostgreSQL, Azure",False,Expert
+P312,E1010,0.404948999844849,1,DevOps,12.9,Mumbai,Welch Inc,Delhi,Open,"REST APIs, NoSQL, Scrum",False,Expert
+P338,E207,0.49237587792138754,1,Full Stack Dev,7.5,Chennai,"Petty, Duran and Duncan",Delhi,Open,"Docker, Kubernetes, AWS",False,Senior
+P381,E213,0.17421331820659583,1,Cybersecurity,5.0,Mumbai,Rhodes-Haynes,Chennai,Open,"Robotic Process Automation, CI/CD, Incident Response",False,Mid-Level
+P303,E646,0.29951622217151985,1,Cloud Engineering,3.0,Pune,"Mata, Mclean and Jones",Mumbai,Closed,"React, Mobile Development, Microservices Architecture",False,Mid-Level
+P324,E593,0.476637401027479,1,Cybersecurity,4.3,Chennai,Garza and Sons,Chennai,Open,"TensorFlow, Scrum, Machine Learning",True,Mid-Level
+P350,E185,0.2093565684416077,1,Cybersecurity,10.9,Chennai,Perez-Miller,Delhi,Closed,"Data Warehousing, Edge Computing, CI/CD Pipelines",False,Senior
+P375,E1056,0.19433323346988296,1,Data Science,12.3,Pune,"Clarke, Smith and Snyder",Chennai,Closed,"API Development, Cloud Security, Data Mesh Architecture",False,Expert
+P325,E581,0.3136418721857974,1,AI Research,3.0,Pune,Ortega Group,Delhi,Open,"AWS, Kubernetes, Container Orchestration",False,Mid-Level
+P331,E1076,0.46006989134157983,1,Full Stack Dev,5.7,Mumbai,Williams-Sharp,Chennai,Closed,"Agile, Data Visualization, Azure",False,Mid-Level
+P369,E662,0.29603723143507704,1,DevOps,14.3,Pune,Ramos-Foster,Chennai,Open,"Data Warehousing, Scrum Methodology, IoT",False,Expert
+P320,E861,0.20391111208430707,1,Full Stack Dev,12.4,Chennai,"Fitzpatrick, Smith and Michael",Chennai,Closed,"Business Intelligence, DevOps Practices, API Development",True,Expert
+P346,E818,0.3910289905902527,1,Cloud Engineering,13.6,Mumbai,"Yu, Doyle and Davidson",Pune,Closed,"SQL, Azure, Data Warehousing",False,Expert
+P348,E996,0.4637801210088838,1,Data Science,14.1,Mumbai,Foster Ltd,Delhi,Open,"CI/CD, GraphQL, PostgreSQL",False,Expert
+P377,E117,0.33705539124621275,1,AI Research,9.1,Pune,"Dixon, Fitzpatrick and Stephens",Chennai,Closed,"Cloud Security, Data Privacy Compliance, Python",False,Senior
+P337,E834,0.4019493532150296,1,Cybersecurity,6.6,Pune,Carlson-Anderson,Delhi,Closed,"Microservices, SQL, Machine Learning",False,Mid-Level
+P357,E155,0.21203959066990974,1,Cloud Engineering,5.8,Delhi,Owens PLC,Chennai,Closed,"Data Quality Management, Data Privacy Compliance, Data Visualization",False,Mid-Level
+P345,E802,0.18593272142380587,1,Full Stack Dev,8.9,Mumbai,Acosta Group,Chennai,Closed,"UI/UX Design, GraphQL API Development, Agile Project Management",False,Senior
+P349,E671,0.2094143681705823,1,Full Stack Dev,5.2,Pune,"Bailey, Martinez and Cox",Chennai,Closed,"CI/CD, Robotic Process Automation, GraphQL API Development",False,Mid-Level
+P321,E607,0.32953788915299,1,AI Research,14.7,Pune,Taylor Ltd,Delhi,Open,"Data Visualization, Quantum Computing, NLP",False,Expert
+P306,E275,0.36101003283512956,1,Data Science,10.7,Mumbai,"Noble, Rosales and Marshall",Mumbai,Open,"Azure, Penetration Testing, CI/CD Pipelines",True,Senior
+P371,E536,0.36603142463216687,1,Cloud Engineering,10.4,Mumbai,"Smith, Reid and Hernandez",Mumbai,Open,"Healthcare Analytics, Data Governance, Agile",True,Senior
+P322,E844,0.312514817064928,1,DevOps,7.3,Delhi,"Newton, Goodwin and Sims",Mumbai,Open,"Data Engineering, Cybersecurity, Python",False,Senior
+P376,E391,0.48546642155796993,1,Full Stack Dev,11.7,Mumbai,"Lee, Wilkerson and Mendoza",Delhi,Closed,"Data Governance, Node.js, Python",False,Senior
+P342,E189,0.34581865399841716,1,DevOps,4.1,Pune,Fisher Ltd,Delhi,Closed,"IoT, Robotic Process Automation, SQL",False,Mid-Level
+P301,E1088,0.5041261602179459,1,Data Science,14.1,Mumbai,Byrd Ltd,Delhi,Closed,"SQL Database Management, Docker, NoSQL",False,Expert
+P359,E333,0.35870821417646515,1,DevOps,9.3,Mumbai,Holland-Dunn,Chennai,Open,"Data Visualization, Cybersecurity, Azure",False,Senior
+P341,E909,0.3475273133806151,1,AI Research,10.5,Delhi,Tyler-Jones,Chennai,Closed,"NoSQL Database Management, Microservices, Agile Project Management",False,Senior
+P347,E423,0.3583798033924339,1,Full Stack Dev,10.1,Mumbai,Myers-Reed,Mumbai,Closed,"GraphQL, Data Engineering, Data Lake Implementation",True,Senior
+P367,E576,0.428959425165232,1,Cloud Engineering,8.4,Pune,Smith-Evans,Mumbai,Closed,"Serverless Architecture, Terraform, AWS",False,Senior
+P396,E254,0.337553532077985,1,AI Research,8.4,Mumbai,"Cardenas, Palmer and Price",Chennai,Closed,"Microservices Architecture, Agile, Python",False,Senior
+P304,E118,0.4330522284466771,1,AI Research,11.6,Chennai,Rodriguez-Dominguez,Chennai,Closed,"Edge Computing, Jenkins, IoT",True,Senior
+P355,E732,0.345486989814496,1,Cloud Engineering,6.6,Chennai,Novak Inc,Pune,Closed,"Quantum Computing, Kubernetes, REST APIs",False,Mid-Level
+P399,E862,0.32024133525870757,1,AI Research,14.4,Pune,"Palmer, Davis and Burns",Mumbai,Closed,"Cybersecurity, CI/CD Pipelines, DevOps Practices",False,Expert
+P332,E443,0.4596224642321164,1,Full Stack Dev,7.6,Pune,Hunter-Harding,Mumbai,Open,"Agile, IoT, Big Data",False,Senior
+P318,E1023,0.3829035948665813,1,Cybersecurity,6.6,Mumbai,"Gonzalez, Dean and Wood",Pune,Closed,"Robotic Process Automation, Jenkins, PostgreSQL",False,Mid-Level
+P334,E607,0.3549204114536938,1,AI Research,14.7,Pune,Mcdaniel-Ochoa,Delhi,Open,"GraphQL, Quantum Computing, NLP",False,Expert
+P374,E1092,0.2723891413654963,1,Cloud Engineering,4.4,Mumbai,"Ross, Gray and Lopez",Delhi,Closed,"Penetration Testing, Agile Project Management, TensorFlow",False,Mid-Level
+P330,E1032,0.31704856206331133,1,AI Research,12.3,Delhi,Hughes-Church,Pune,Open,"Data Lake Implementation, Cybersecurity, GraphQL API Development",False,Expert
+P336,E184,0.31983832168408466,1,Data Science,6.6,Mumbai,"Lee, Berry and Li",Delhi,Closed,"NoSQL Database Management, SQL, Data Quality Management",False,Mid-Level
+P310,E878,0.20185314914732086,1,AI Research,9.6,Mumbai,Dawson and Sons,Mumbai,Closed,"Data Engineering, Edge Computing, Container Orchestration",True,Senior
+P363,E138,0.3219905925065904,1,Data Science,7.4,Chennai,"Banks, Johnson and Branch",Mumbai,Open,"GraphQL, Incident Response, REST APIs",False,Senior
