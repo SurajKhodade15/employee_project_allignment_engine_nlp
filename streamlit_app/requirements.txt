@@ -4,4 +4,4 @@ plotly
 pandas
 numpy
 scikit-learn
-pickle-mixin
+pathlib2

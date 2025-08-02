@@ -500,7 +500,7 @@ def main():
         if st.button("🚀 Start Matching Pipeline", type="primary"):
             success = run_matching_pipeline()
             if success:
-                st.experimental_rerun()
+                st.rerun()
     
     elif page == "📊 View Recommendations":
         if recommendations is not None:
